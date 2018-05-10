@@ -5,7 +5,7 @@ class MovieComponent extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className="movie-component">
       </div>
     );
   }
