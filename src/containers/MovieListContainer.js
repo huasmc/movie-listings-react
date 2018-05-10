@@ -8,10 +8,10 @@ class MovieListContainer extends React.Component {
       movies: []
     }
   }
-  
+
   render() {
     return(
-      <div>
+      <div className="movie-list-wrapper">
     </div>
     );
   }

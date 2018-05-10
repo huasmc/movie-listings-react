@@ -16,5 +16,5 @@ it('should have movies state', () => {
 it('should render div with movie-list-wrapper selector', () => {
   const wrapper = shallow(<MovieListContainer />);
   const div = wrapper.find('.movie-list-wrapper')
-  expect(div.lenght).toEqual(1);
+  expect(div.length).toEqual(1);
 })
