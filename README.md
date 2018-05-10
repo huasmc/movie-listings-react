@@ -8,6 +8,8 @@ The stack:
 - Airbnb's enzyme
 - AXIOS
 
+Click [here](https://sleepy-shelf-18263.herokuapp.com/) for buggy deployed version.
+
 ## How to run
 
 - Clone this repo
