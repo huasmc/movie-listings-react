@@ -36,6 +36,14 @@ it('should be able to setMovies state', () => {
   const array = [0, 1];
   const inst = wrapper.instance();
   inst.setMovies(array);
-  const actual = inst["state"]["movies"]
+  const actual = inst['state']['movies']
   expect(actual.length).toEqual(2);
-})
+});
+
+it('should be able to get comedy movies', () => {
+  const wrapper = shallow(<MovieListContainer />);
+  const inst = wrapper.instance();
+  inst.getMovies('comedy');
+  const actual = inst['state']['movies']
+  expect(actual.length).toEqual(10);
+});
