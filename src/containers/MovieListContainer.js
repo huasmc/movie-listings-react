@@ -33,10 +33,15 @@ class MovieListContainer extends React.Component {
   }
 
   render() {
+    let movieComponents;
+    const { movies } = this.state;
+    if(movies.length !== 0) {
+      movieComponents = this.state.movies.map(movie => (<MovieComponent key={movie["Title"]} movie={movie} />))
+    }
     return(
       <div className="movie-list-wrapper">
         <div className="movie-list-container">
-          {this.state.movies.map(movie => (<MovieComponent key={movie["Title"]} movie={movie} />))}
+          { movieComponents }
         </div>
       </div>
     );
