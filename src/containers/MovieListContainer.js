@@ -9,11 +9,17 @@ class MovieListContainer extends React.Component {
     }
   }
 
+  setMovies(movies) {
+    this.setState({
+      movies: movies
+    })
+  }
+
   render() {
     return(
       <div className="movie-list-wrapper">
         <div className="movie-list-container">
-          
+
         </div>
       </div>
     );
