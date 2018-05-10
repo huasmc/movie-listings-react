@@ -1,5 +1,5 @@
 import React from 'react';
-import GenreComponent from '../containers/GenreComponent'
+import GenreComponent from '../components/GenreComponent'
 import { shallow, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 
