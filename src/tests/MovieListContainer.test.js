@@ -17,4 +17,10 @@ it('should render div with movie-list-wrapper selector', () => {
   const wrapper = shallow(<MovieListContainer />);
   const div = wrapper.find('.movie-list-wrapper')
   expect(div.length).toEqual(1);
-})
+});
+
+it('should render div with movie-list-container selector', () => {
+  const wrapper = shallow(<MovieListContainer />);
+  const div = wrapper.find('.movie-list-container')
+  expect(div.length).toEqual(1);
+});
