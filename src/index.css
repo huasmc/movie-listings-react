@@ -155,7 +155,10 @@ ul {
       .movie-details-container img{
         /* visibility: hidden; */
         width: 200%;
-        font-size: 20%;
+      }
+
+      .movie-details-container p {
+        font-size: 0.7em;
       }
 
       .search-wrapper {
