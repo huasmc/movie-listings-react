@@ -11,16 +11,18 @@ class App extends Component {
     }
   }
 
-  updateSearchParams(params) {
+  updateSearchParams(args) {
+    console.log(args);
     this.setState({
-      searchParams: params
+      searchParams: args
     })
   }
+
   render() {
     return (
       <div>
         <MovieListContainer searchParams={ this.state.searchParams }/>
-        <SearchContainer />
+        <SearchContainer updateSearch={ () => this.updateSearchParams.bind(this) }/>
       </div>
     );
   }
