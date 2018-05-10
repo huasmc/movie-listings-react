@@ -54,3 +54,9 @@ it('should render third text year', () => {
   const p = wrapper.find('p').at(2);
   expect(p.text()).toEqual('Year: ');
 });
+
+it('should render fourth text runtime', () => {
+  const wrapper = shallow(<MovieDetailsComponent />);
+  const p = wrapper.find('p').at(3);
+  expect(p.text()).toEqual('Runtime: ');
+});
