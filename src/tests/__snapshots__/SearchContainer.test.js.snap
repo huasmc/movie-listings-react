@@ -4,6 +4,30 @@ exports[`should match the snapshot 1`] = `
 <div
   className="search-wrapper"
 >
-  a
+  <div
+    className="genre-container"
+  >
+    <div
+      className="genre-component"
+    >
+      <p>
+        comedy
+      </p>
+    </div>
+    <div
+      className="genre-component"
+    >
+      <p>
+        action
+      </p>
+    </div>
+    <div
+      className="genre-component"
+    >
+      <p>
+        indie
+      </p>
+    </div>
+  </div>
 </div>
 `;

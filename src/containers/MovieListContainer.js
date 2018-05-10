@@ -12,7 +12,7 @@ class MovieListContainer extends React.Component {
   }
 
   componentDidMount() {
-    this.getMovies('comedy')
+    this.getMovies(this.props.searchParams)
   }
 
   getMovies(params) {
