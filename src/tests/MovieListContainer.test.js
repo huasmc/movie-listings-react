@@ -8,7 +8,13 @@ it('should render without crashing', () => {
 });
 
 it('should have movies state', () => {
-  const wrapper = mount(<MovieListContainer />);
-  const movies = wrapper.state().movies
+  const wrapper = shallow(<MovieListContainer />);
+  const movies = wrapper.state().movies;
   expect(movies).toEqual([]);
 });
+
+it('should render div with movie-list-wrapper selector', () => {
+  const wrapper = shallow(<MovieListContainer />);
+  const div = wrapper.find('.movie-list-wrapper')
+  expect(div.lenght).toEqual(1);
+})
