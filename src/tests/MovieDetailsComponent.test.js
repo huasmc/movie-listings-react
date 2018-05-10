@@ -43,8 +43,8 @@ it('should render first text awards', () => {
   expect(p.text()).toEqual('Awards: ');
 });
 
-it('should render first text actors', () => {
+it('should render second text actors', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
-  const p = wrapper.find('p').at(0);
-  expect(p.text()).toEqual('Awards: ');
+  const p = wrapper.find('p').at(1);
+  expect(p.text()).toEqual('Actors: ');
 });
