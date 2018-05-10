@@ -2,6 +2,7 @@ import React from 'react';
 import MovieComponent from '../components/MovieComponent'
 import { shallow, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
+import axios from 'axios';
 
 it('should render without crashing', () => {
   shallow(<MovieComponent />);
@@ -13,7 +14,7 @@ it('should render div with movie-component class', () => {
   expect(div.length).toEqual(1);
 });
 
-xit('should have div with style backgroundImage property', () => {
+it('should have div with style backgroundImage property', () => {
   const wrapper = shallow(<MovieComponent />);
   const div = wrapper.find('.movie-component');
   expect(div.prop('style'));
