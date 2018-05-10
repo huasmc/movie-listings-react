@@ -31,10 +31,11 @@ it('should have an instance', () => {
   expect(inst).toBeTruthy();
 })
 
-xit('should be able to setMovies state', () => {
+it('should be able to setMovies state', () => {
   const wrapper = shallow(<MovieListContainer />);
   const array = [0, 1];
-  wrapper.instance().setMovies(array)
-  const movies = instance.state().movies;
-  expect(movies.length).toEqual(2);
+  const inst = wrapper.instance();
+  inst.setMovies(array);
+  const actual = inst["state"]["movies"]
+  expect(actual.length).toEqual(2);
 })
