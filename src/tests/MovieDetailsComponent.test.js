@@ -19,12 +19,6 @@ it('should have a div with movie-details-container selector', () => {
   expect(div.length).toEqual(1);
 });
 
-it('should render an image tag', () => {
-  const wrapper = shallow(<MovieDetailsComponent />);
-  const img = wrapper.find('img')
-  expect(img.length).toEqual(1);
-});
-
 it('should render div tag with specified css selector', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
   const div = wrapper.find('.selected-image-container');
