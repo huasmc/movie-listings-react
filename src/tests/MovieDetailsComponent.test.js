@@ -11,7 +11,7 @@ it('should render two divs', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
   const div = wrapper.find('div')
   expect(div.length).toEqual(2);
-})
+});
 
 it('should have a div with movie-details-container selector', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
@@ -19,4 +19,8 @@ it('should have a div with movie-details-container selector', () => {
   expect(div.length).toEqual(1);
 });
 
-// it('should have an image tag')
+it('should render an image tag', () => {
+  const wrapper = shallow(<MovieDetailsComponent />);
+  const img = wrapper.find('img')
+  expect(img.length).toEqual(1);
+});
