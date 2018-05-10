@@ -11,8 +11,10 @@ class MovieDetailsComponent extends React.Component {
     }
     return(
       <div className="movie-details-container">
-        <p>{ awards }</p>
-        <p>{ actors }</p>
+        <div>
+          <p>{ awards }</p>
+          <p>{ actors }</p>
+        </div>
       </div>
     );
   }

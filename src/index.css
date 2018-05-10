@@ -135,6 +135,12 @@ ul {
 
 .movie-details-container {
   height: 100%;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  margin-top: 10%;
+  padding-left: 5%;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
