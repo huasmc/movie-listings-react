@@ -13,11 +13,13 @@ class PreviewInfoComponent extends React.Component {
       title = ""
     }
     return(
-      <div className="preview-info">
-        <ul>
-          <li className="movie-type">{type}</li>
-          <li className="movie-title">{title}</li>
-        </ul>
+      <div className="preview-info-container">
+        <div className="preview-info">
+          <ul>
+            <li className="movie-type">{type}</li>
+            <li className="movie-title">{title}</li>
+          </ul>
+          </div>
       </div>
     );
   }

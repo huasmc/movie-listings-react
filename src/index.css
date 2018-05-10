@@ -75,22 +75,6 @@ body {
   color: white;
 }
 
-.preview-info:hover {
-  color: white;
-  float: left;
-  margin-top: 50%;
-  font-weight: bold;
-  font-size: 2em;
-  text-align: left;
-  background-color: black;
-  text-transform: uppercase;
-  -webkit-transition: all 0.5s ease-in-out;
-   -moz-transition: all 0.5s ease-in;
-   -o-transition: all 0.5s ease-in;
-   -ms-transition: all 0.5s ease-in;
-   transition: all 0.5s ease-in;
-}
-
 .preview-info {
   color: transparent;
   float: left;
@@ -104,6 +88,27 @@ body {
    -o-transition: all 3s ease-in;
    -ms-transition: all 3s ease-in;
    transition: all 3s ease-in;
+}
+
+.preview-info-container {
+  width: 100%;
+  height:100%;
+}
+
+.preview-info-container:hover .preview-info {
+  color: white;
+  float: left;
+  margin-top: 50%;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: left;
+  background-color: black;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in;
+   -o-transition: all 0.5s ease-in;
+   -ms-transition: all 0.5s ease-in;
+   transition: all 0.5s ease-in;
 }
 
 ul {
