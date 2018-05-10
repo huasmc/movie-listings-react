@@ -9,7 +9,6 @@ it('should render without crashing', () => {
 
 it('should have movies state', () => {
   const wrapper = shallow(<MovieListContainer />);
-  const actual = wrapper.state().movies;
-  const expected = [];
-  expect(actual.toEqual(expected));
+  const movies = wrapper.state().movies
+  expect((movies).exists()).toEqual(true);
 });
