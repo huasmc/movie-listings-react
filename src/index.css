@@ -152,8 +152,14 @@ ul {
 
 @media only screen and (max-width: 600px) {
 
-      html {
+      body {
+        text-align: center;
+        background-color: #000000;
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
         overflow: hidden;
+        font-family: monospace;
       }
 
       .movie-details-container img{
