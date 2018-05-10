@@ -14,6 +14,6 @@ it('should be able to update searchParams', () => {
   const wrapper = mount(<App />);
   const inst = wrapper.instance();
   inst.updateSearchParams('action');
-  actual = wrapper.state().searchParams;
+  const actual = inst.state.searchParams;
   expect(actual).toEqual('action');
 })

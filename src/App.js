@@ -11,7 +11,11 @@ class App extends Component {
     }
   }
 
-
+  updateSearchParams(params) {
+    this.setState({
+      searchParams: params
+    })
+  }
   render() {
     return (
       <div>
