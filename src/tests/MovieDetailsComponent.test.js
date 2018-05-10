@@ -25,10 +25,10 @@ it('should render an image tag', () => {
   expect(img.length).toEqual(1);
 });
 
-it('should render image tag with specified css selector', () => {
+it('should render div tag with specified css selector', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
-  const img = wrapper.find('.selected-movie-image');
-  expect(img.length).toEqual(1);
+  const div = wrapper.find('.selected-image-container');
+  expect(div.length).toEqual(1);
 });
 
 it('should render 5 p tags', () => {
