@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot 1`] = `
+<div
+  className="movie-component"
+  style={
+    Object {
+      "backgroundImage": "url()",
+    }
+  }
+>
+  <div
+    className="preview-info"
+  >
+    <ul>
+      <li
+        className="movie-type"
+      >
+        
+      </li>
+      <li
+        className="movie-title"
+      >
+        
+      </li>
+    </ul>
+  </div>
+</div>
+`;
