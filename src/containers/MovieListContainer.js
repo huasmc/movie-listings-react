@@ -21,7 +21,7 @@ class MovieListContainer extends React.Component {
 
 
   getMovies(params) {
-    axios.get(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${params}`)
+    axios.get(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&s=${params}`)
     .then((response) => {
       console.log(response);
       this.setMovies(response.data.Search)

@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   updateCurrentMovie(args) {
-      axios.get(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&i=${args}`)
+      axios.get(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&i=${args}`)
       .then((response) => {
         console.log(response);
         this.setState({
