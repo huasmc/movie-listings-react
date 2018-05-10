@@ -9,6 +9,21 @@ exports[`should match the snapshot 1`] = `
     }
   }
 >
-  -
+  <div
+    className="preview-info"
+  >
+    <ul>
+      <li
+        className="movie-type"
+      >
+        
+      </li>
+      <li
+        className="movie-title"
+      >
+        
+      </li>
+    </ul>
+  </div>
 </div>
 `;
