@@ -25,8 +25,26 @@ it('should render two li tags', () => {
   expect(li.length).toEqual(2);
 });
 
-it('should render a li tag with class type', () => {
+it('should render a li tag with class movie-type', () => {
   const wrapper = shallow(<PreviewInfoComponent/>);
   const li = wrapper.find('.movie-type')
   expect(li.length).toEqual(1);
 });
+
+it('should render a li tag with class movie-title', () => {
+  const wrapper = shallow(<PreviewInfoComponent/>);
+  const li = wrapper.find('.movie-title')
+  expect(li.length).toEqual(1);
+});
+
+xit('should render li tag TITLE with passed props'), () =>{
+  const wrapper = shallow(<PreviewInfoComponent/>);
+  const li = wrapper.find('.movie-type')
+  expect(li.length).toEqual(1);
+}
+
+xit('should render li tag TYPE with passed props'), () =>{
+  const wrapper = shallow(<PreviewInfoComponent/>);
+  const li = wrapper.find('.movie-type')
+  expect(li.length).toEqual(1);
+}
