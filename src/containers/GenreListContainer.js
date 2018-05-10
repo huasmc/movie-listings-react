@@ -4,8 +4,8 @@ class GenreListContainer extends React.Component {
 
   render() {
     return(
-      <div>
-      
+      <div className="genre-container">
+
       </div>
     );
   }
