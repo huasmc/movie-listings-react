@@ -24,3 +24,9 @@ it('should render an image tag', () => {
   const img = wrapper.find('img')
   expect(img.length).toEqual(1);
 });
+
+it('should render image tag with specified css selector', () => {
+  const wrapper = shallow(<MovieDetailsComponent />);
+  const img = wrapper.find('.selected-movie-image');
+  expect(img.length).toEqual(1);
+});
