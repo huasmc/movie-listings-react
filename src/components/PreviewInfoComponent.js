@@ -7,7 +7,7 @@ class PreviewInfoComponent extends React.Component {
       <div className="preview-info">
         <ul>
           <li className="movie-type"></li>
-          <li></li>
+          <li className="movie-title"></li>
         </ul>
       </div>
     );
