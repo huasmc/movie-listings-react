@@ -26,6 +26,9 @@ body {
   width: 30%;
   overflow: auto;
   float: right;
+  -webkit-box-shadow: 0px -50px #000000;
+  -moz-box-shadow: 0px -50px #000000;
+  box-shadow: 0px -50px #000000;
 }
 
 .movie-list-container {
