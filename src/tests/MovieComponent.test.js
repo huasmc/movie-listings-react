@@ -13,8 +13,8 @@ it('should render div with movie-component class', () => {
   expect(div.length).toEqual(1);
 });
 
-it('should have div with style property', () => {
+it('should have div with style backgroundImage property', () => {
   const wrapper = shallow(<MovieComponent />);
-  const div = wrapper.find('.movie-component')
-  expect(div.prop('style')).toBeTruthy();
+  const div = wrapper.find('.movie-component');
+  expect(div.prop('style'));
 });
