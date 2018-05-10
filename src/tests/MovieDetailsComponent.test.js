@@ -36,3 +36,15 @@ it('should render 5 p tags', () => {
   const p = wrapper.find('p');
   expect(p.length).toEqual(5);
 });
+
+it('should render first text awards', () => {
+  const wrapper = shallow(<MovieDetailsComponent />);
+  const p = wrapper.find('p').at(0);
+  expect(p.text()).toEqual('Awards: ');
+});
+
+it('should render first text actors', () => {
+  const wrapper = shallow(<MovieDetailsComponent />);
+  const p = wrapper.find('p').at(0);
+  expect(p.text()).toEqual('Awards: ');
+});
