@@ -167,12 +167,12 @@ ul {
         transform: scale(1);
       }
 
-      .preview-info:hover {
+      .preview-info-container:hover .preview-info {
         color: white;
         float: left;
-        margin-top: 30%;
+        margin-top: 40%;
         font-weight: bold;
-        font-size: 1em;
+        font-size: 0.6em;
         text-align: left;
         background-color: black;
         text-transform: uppercase;
@@ -186,7 +186,7 @@ ul {
       .preview-info {
         color: transparent;
         float: left;
-        margin-top: 50%;
+        margin-top: 10%;
         font-weight: bold;
         text-align: left;
         text-transform: uppercase;
