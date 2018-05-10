@@ -8,7 +8,7 @@ it('should render without crashing', () => {
 });
 
 it('should render div with preview-info class', () => {
-  const wrapper = shallow(<GenreListContainer />);
+  const wrapper = shallow(<PreviewInfoComponent/>);
   const div = wrapper.find('.preview-info')
   expect(div.length).toEqual(1);
 });

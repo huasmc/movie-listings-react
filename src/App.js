@@ -17,11 +17,9 @@ class App extends Component {
       searchParams: args
     })
     this.forceUpdate()
-    console.log(this.state.searchParams);
   }
 
   render() {
-    console.log(this.state.searchParams);
     return (
       <div>
         <MovieListContainer searchParams={ this.state.searchParams }/>

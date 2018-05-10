@@ -4,7 +4,7 @@ class PreviewInfoComponent extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className="preview-info">
       </div>
     );
   }
