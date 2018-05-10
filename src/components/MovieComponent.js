@@ -4,7 +4,7 @@ class MovieComponent extends React.Component {
 
   render() {
     let poster;
-    if(this.props.movie != undefined) {
+    if(this.props.movie !== undefined) {
       poster = this.props.movie["Poster"]
     } else {
       poster = ""
