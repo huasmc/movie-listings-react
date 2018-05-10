@@ -1,4 +1,5 @@
 import React from 'react';
+import PreviewInfoComponent from './PreviewInfoComponent'
 
 class MovieComponent extends React.Component {
 
@@ -12,7 +13,7 @@ class MovieComponent extends React.Component {
 
     return(
       <div className="movie-component" style={{backgroundImage: `url(${poster})`}}>
-        {"-"}
+      <PreviewInfoComponent movie={ this.props.movie }/>
       </div>
     );
   }
