@@ -12,3 +12,9 @@ it('should render div with preview-info class', () => {
   const div = wrapper.find('.preview-info')
   expect(div.length).toEqual(1);
 });
+
+it('should render ul tags', () => {
+  const wrapper = shallow(<PreviewInfoComponent/>);
+  const div = wrapper.find('ul')
+  expect(div.length).toEqual(1);
+});
