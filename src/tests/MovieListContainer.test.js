@@ -51,7 +51,7 @@ it('should match the snapshot', () => {
   expect(tree).toMatchSnapshot();
 });
 
-xit('should render 10 movie components', () => {
+xit('should render 10 movie components at start', () => {
   const wrapper = shallow(<MovieListContainer />);
   const components = wrapper.find(MovieComponent)
   expect(components.length).toEqual(10);
