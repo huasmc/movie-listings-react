@@ -7,7 +7,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      searchParams: "comedy"
+      searchParams: "pirates"
     }
     this.updateSearch.bind(this)
   }
