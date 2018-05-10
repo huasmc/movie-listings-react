@@ -145,8 +145,12 @@ ul {
 
 @media only screen and (max-width: 1000px) {
 
-      html body #root .App .search-wrapper {
+      html body #root .App{
+        height: 100%;
+        width: 100%;
         overflow: hidden;
+        padding: 0px;
+        margin: 0px;
       }
 
       .movie-details-container img{
