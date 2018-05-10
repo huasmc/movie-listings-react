@@ -18,3 +18,9 @@ it('should render ul tags', () => {
   const div = wrapper.find('ul')
   expect(div.length).toEqual(1);
 });
+
+it('should render two li tags', () => {
+  const wrapper = shallow(<PreviewInfoComponent/>);
+  const div = wrapper.find('li')
+  expect(div.length).toEqual(2);
+})
