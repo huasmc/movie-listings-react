@@ -23,4 +23,10 @@ it('should render two li tags', () => {
   const wrapper = shallow(<PreviewInfoComponent/>);
   const div = wrapper.find('li')
   expect(div.length).toEqual(2);
+});
+
+it('should render a li tag with class type', () => {
+  const wrapper = shallow(<PreviewInfoComponent/>);
+  const div = wrapper.find('.movie-type')
+  expect(div.length).toEqual(1);
 })
