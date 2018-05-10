@@ -12,3 +12,9 @@ it('should render div with movie-component class', () => {
   const div = wrapper.find('.movie-component')
   expect(div.length).toEqual(1);
 });
+
+it('should have div with style property', () => {
+  const wrapper = shallow(<MovieComponent />);
+  const div = wrapper.find('.movie-component')
+  expect(div.prop('style')).toBeTruthy();
+});
