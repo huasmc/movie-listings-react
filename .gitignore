@@ -5,6 +5,8 @@
 
 # testing
 /coverage
+*.snap
+
 
 # production
 /build
