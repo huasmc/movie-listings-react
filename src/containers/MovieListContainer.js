@@ -11,6 +11,10 @@ class MovieListContainer extends React.Component {
     }
   }
 
+  componentDidMount() {
+    this.getMovies(this.props.searchParams)
+  }
+
   componentWillReceiveProps() {
     this.getMovies(this.props.searchParams)
   }
@@ -34,10 +38,9 @@ class MovieListContainer extends React.Component {
   }
 
   render() {
-    () => this.getMovies(this.props.searchParams)
     let movieComponents;
     const { movies } = this.state;
-    if(movies.length !== 0 || movies != undefined) {
+    if(movies.length !== 0 || movies !== undefined) {
       movieComponents = this.state.movies.map((movie, i) => (<MovieComponent movie={movie} key={i}/>))
     }
     return(
