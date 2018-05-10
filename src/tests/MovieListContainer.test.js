@@ -24,3 +24,12 @@ it('should render div with movie-list-container selector', () => {
   const div = wrapper.find('.movie-list-container')
   expect(div.length).toEqual(1);
 });
+
+it('should be able to setMovies state', () => {
+  const wrapper = shallow(<MovieListContainer />);
+  const instance = wrapper.instance();
+  const array = [0, 1];
+  instance.setMovies(array)
+  const movies = instance.state().movies;
+  expect(movies.length).toEqual(2);
+})
