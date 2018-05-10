@@ -39,7 +39,6 @@ body {
 .movie-list-container {
   display: flex;
   flex-direction: column;
-  background-color: green;
   width: 100%;
   height: 200vh;
   overflow-y: scroll;

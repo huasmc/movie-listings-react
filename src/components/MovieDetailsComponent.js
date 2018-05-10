@@ -20,7 +20,7 @@ class MovieDetailsComponent extends React.Component {
     return(
       <div className="movie-details-container">
         <div>
-          <img className="selected-movie-image" src={poster}/>
+          <img className="selected-movie-image" alt="" src={poster}/>
           <p>Awards: { awards }</p>
           <p>Actors: { actors }</p>
           <p>Year: { year }</p>
