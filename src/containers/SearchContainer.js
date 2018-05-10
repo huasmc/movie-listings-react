@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios'
 
-class MovieListContainer extends React.Component {
+class SearchContainer extends React.Component {
 
   render() {
     return(
@@ -12,4 +12,4 @@ class MovieListContainer extends React.Component {
   }
 }
 
-export default MovieListContainer;
+export default SearchContainer;
