@@ -17,4 +17,4 @@ it('should render GenreListContainer', () => {
   const wrapper = mount(<SearchContainer />);
   const container = wrapper.find('GenreListContainer')
   expect(container.length).toEqual(1);
-})
+});
