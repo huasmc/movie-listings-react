@@ -6,7 +6,8 @@ class PreviewInfoComponent extends React.Component {
     return(
       <div className="preview-info">
         <ul>
-          
+          <li></li>
+          <li></li>
         </ul>
       </div>
     );
