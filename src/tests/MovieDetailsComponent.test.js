@@ -60,3 +60,9 @@ it('should render fourth text runtime', () => {
   const p = wrapper.find('p').at(3);
   expect(p.text()).toEqual('Runtime: ');
 });
+
+it('should render fifth text rating', () => {
+  const wrapper = shallow(<MovieDetailsComponent />);
+  const p = wrapper.find('p').at(4);
+  expect(p.text()).toEqual('Rating: ');
+});
