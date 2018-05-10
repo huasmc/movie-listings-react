@@ -4,7 +4,7 @@ class InputContainer extends React.Component {
  render() {
   return(
    <div>
-    
+    <input className="input-box"/>
   </div>
    );
   }
