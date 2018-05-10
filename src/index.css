@@ -145,14 +145,6 @@ ul {
 
 @media only screen and (max-width: 1000px) {
 
-      html body #root .App{
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        padding: 0px;
-        margin: 0px;
-      }
-
       .movie-details-container img{
         /* visibility: hidden; */
         width: 200%;
@@ -251,6 +243,10 @@ ul {
         -webkit-box-shadow: 20px 20px 20px #000000;
         -moz-box-shadow: 20px 20px 20px #000000;
         box-shadow: 20px 20px 20px #000000;
+      }
+
+      .search-wrapper {
+        visibility: collapse;
       }
 
   }
