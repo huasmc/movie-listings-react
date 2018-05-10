@@ -7,9 +7,11 @@ class App extends Component {
     super(props);
 
     this.state = {
-      searchParams: "pirates"
+      searchParams: "pirates",
+      currentMovieID: undefined
     }
     this.updateSearch.bind(this)
+    this.updateCurrentMovie.bind(this)
   }
 
   updateSearch(args) {
@@ -20,10 +22,18 @@ class App extends Component {
     console.log(args);
   }
 
+  updateCurrentMovie(args) {
+    this.setState({
+      currentMovie: args
+    })
+    console.log(args);
+  }
+
   render() {
     return (
       <div>
-        <MovieListContainer searchParams={ this.state.searchParams }/>
+        {/* <MovieDetailsComponent movie={ this.state.currentMovie }/> */}
+        <MovieListContainer searchParams={ this.state.searchParams } updateCurrentMovie={ this.updateCurrentMovie.bind(this) }/>
         <SearchContainer updateSearch={this.updateSearch.bind(this)}/>
       </div>
     );

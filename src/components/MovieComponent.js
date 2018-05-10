@@ -5,13 +5,15 @@ class MovieComponent extends React.Component {
 
   render() {
     let poster;
+    let id;
     if(this.props.movie !== undefined) {
       poster = this.props.movie["Poster"]
+      id = this.props.movie["imdbID"]
     } else {
       poster = ""
     }
     return(
-      <div className="movie-component" style={{backgroundImage: `url(${poster})`}}>
+      <div className="movie-component" style={{backgroundImage: `url(${poster})`}} onClick={() => this.props.updateCurrentMovie(id)}>
         <PreviewInfoComponent movie={this.props.movie}/>
       </div>
     );

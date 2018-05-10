@@ -41,7 +41,7 @@ class MovieListContainer extends React.Component {
     let movieComponents;
     const { movies } = this.state;
     if(movies.length !== 0 || movies !== undefined) {
-      movieComponents = this.state.movies.map((movie, i) => (<MovieComponent movie={movie} key={i}/>))
+      movieComponents = this.state.movies.map((movie, i) => (<MovieComponent movie={movie} key={i} updateCurrentMovie={this.props.updateCurrentMovie}/>))
     }
     return(
       <div className="movie-list-wrapper">
