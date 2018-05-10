@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios'
+import MovieComponent from '../components/MovieComponent'
 
 class MovieListContainer extends React.Component {
   constructor(props){
@@ -35,7 +36,7 @@ class MovieListContainer extends React.Component {
     return(
       <div className="movie-list-wrapper">
         <div className="movie-list-container">
-          a
+          {this.state.movies.map(movie => (<MovieComponent key={movie["Title"]} movie={movie} />))}
         </div>
       </div>
     );
