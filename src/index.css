@@ -63,3 +63,11 @@ body {
   overflow: auto;
   float: left;
 }
+
+.genre-container {
+  margin: 30% auto;
+  font-weight: bold;
+  font-size: 5em;
+  color: white;
+  font-family: monospace;
+}
