@@ -49,4 +49,4 @@ it('should match the snapshot', () => {
   const component = renderer.create(<MovieListContainer />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
-})
+});
