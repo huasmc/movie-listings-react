@@ -6,3 +6,9 @@ import renderer from 'react-test-renderer';
 it('should render without crashing', () => {
   shallow(<SearchContainer />);
 });
+
+it('should match the snapshot', () => {
+  const component = renderer.create(<SearchContainer />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
