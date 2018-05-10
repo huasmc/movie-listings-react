@@ -18,3 +18,12 @@ body {
 #root {
   text-align: center;
 }
+
+.movie-list-wrapper {
+  margin: 10%;
+  height: 700px;
+  width: 30%;
+  overflow: auto;
+  float: right;
+  background-color: red;
+}
