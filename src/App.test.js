@@ -13,7 +13,7 @@ it('should render MovieListContainer', () => {
 it('should be able to update searchParams', () => {
   const wrapper = mount(<App />);
   const inst = wrapper.instance();
-  inst.updateSearchParams('action');
+  inst.updateSearch('action');
   const actual = inst.state.searchParams;
   expect(actual).toEqual('action');
 });

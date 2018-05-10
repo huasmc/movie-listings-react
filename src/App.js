@@ -9,20 +9,23 @@ class App extends Component {
     this.state = {
       searchParams: "comedy"
     }
+    this.updateSearch.bind(this)
   }
 
-  updateSearchParams(args) {
-    console.log(args);
+  updateSearch(args) {
     this.setState({
       searchParams: args
     })
+    this.forceUpdate()
+    console.log(this.state.searchParams);
   }
 
   render() {
+    console.log(this.state.searchParams);
     return (
       <div>
         <MovieListContainer searchParams={ this.state.searchParams }/>
-        <SearchContainer updateSearch={ (choice) => this.updateSearchParams.bind(this, choice) }/>
+        <SearchContainer updateSearch={this.updateSearch.bind(this)}/>
       </div>
     );
   }

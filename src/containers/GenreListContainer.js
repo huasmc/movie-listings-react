@@ -6,9 +6,9 @@ class GenreListContainer extends React.Component {
   render() {
     return(
       <div className="genre-container">
-        <GenreComponent genre={"comedy"} updateSearch={this.props.updateSearch.bind(this)} />
-        <GenreComponent genre={"action"} updateSearch={this.props.updateSearch.bind(this)}/>
-        <GenreComponent genre={"indie"} updateSearch={this.props.updateSearch.bind(this)}/>
+        <GenreComponent genre={"comedy"} updateSearch={ this.props.updateSearch } />
+        <GenreComponent genre={"action"} updateSearch={ this.props.updateSearch }/>
+        <GenreComponent genre={"thriller"} updateSearch={ this.props.updateSearch }/>
       </div>
     );
   }

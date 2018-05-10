@@ -10,22 +10,28 @@ exports[`should match the snapshot 1`] = `
     <div
       className="genre-component"
     >
-      <p>
+      <p
+        onClick={[Function]}
+      >
         comedy
       </p>
     </div>
     <div
       className="genre-component"
     >
-      <p>
+      <p
+        onClick={[Function]}
+      >
         action
       </p>
     </div>
     <div
       className="genre-component"
     >
-      <p>
-        indie
+      <p
+        onClick={[Function]}
+      >
+        thriller
       </p>
     </div>
   </div>

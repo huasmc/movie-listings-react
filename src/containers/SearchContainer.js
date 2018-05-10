@@ -6,7 +6,7 @@ class SearchContainer extends React.Component {
   render() {
     return(
       <div className="search-wrapper">
-        <GenreListContainer updateSearch={this.props.updateSearch.bind(this) }/>
+        <GenreListContainer updateSearch={ this.props.updateSearch }/>
       </div>
     );
   }

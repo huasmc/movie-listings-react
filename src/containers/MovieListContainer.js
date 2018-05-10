@@ -11,9 +11,10 @@ class MovieListContainer extends React.Component {
     }
   }
 
-  componentDidMount() {
+  componentWillReceiveProps() {
     this.getMovies(this.props.searchParams)
   }
+
 
   getMovies(params) {
     axios.get(`http://www.omdbapi.com/?apikey=b4b1f175&s=${params}`)
@@ -33,6 +34,7 @@ class MovieListContainer extends React.Component {
   }
 
   render() {
+    () => this.getMovies(this.props.searchParams)
     let movieComponents;
     const { movies } = this.state;
     if(movies.length !== 0) {
