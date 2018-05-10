@@ -40,10 +40,13 @@ it('should be able to setMovies state', () => {
   expect(actual.length).toEqual(2);
 });
 
-it('should be able to get comedy movies', () => {
+xit('should get comedy movies on mount', () => {
   const wrapper = shallow(<MovieListContainer />);
-  const inst = wrapper.instance();
-  inst.getMovies('comedy');
-  const actual = inst['state']['movies']
-  expect(actual.length).toEqual(10);
+  expect(wrapper.state().length).toEqual(10);
 });
+
+it('should match the snapshot', () => {
+  const component = renderer.create(<MovieListContainer />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+})
