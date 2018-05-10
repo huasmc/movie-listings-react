@@ -16,4 +16,4 @@ it('should be able to update searchParams', () => {
   inst.updateSearchParams('action');
   const actual = inst.state.searchParams;
   expect(actual).toEqual('action');
-})
+});

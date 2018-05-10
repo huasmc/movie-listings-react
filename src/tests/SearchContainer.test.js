@@ -12,3 +12,9 @@ it('should match the snapshot', () => {
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+it('should render GenreListContainer', () => {
+  const wrapper = mount(<SearchContainer />);
+  const container = wrapper.find('GenreListContainer')
+  expect(container.length).toEqual(1);
+})
