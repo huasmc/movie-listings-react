@@ -15,8 +15,8 @@ it('should render div with class genre-component', () => {
 
 
 
-// it('should match the snapshot', () => {
-//   const component = renderer.create(<GenreComponent />);
-//   let tree = component.toJSON();
-//   expect(tree).toMatchSnapshot();
-// });
+it('should match the snapshot', () => {
+  const component = renderer.create(<GenreComponent />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
