@@ -12,7 +12,10 @@ class MovieListContainer extends React.Component {
   render() {
     return(
       <div className="movie-list-wrapper">
-    </div>
+        <div className="movie-list-container">
+          
+        </div>
+      </div>
     );
   }
 }
