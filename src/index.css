@@ -135,8 +135,9 @@ ul {
 
 .movie-details-container {
   height: 100%;
+  width:22%;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.4em;
   text-align: left;
   margin-top: 10%;
   padding-left: 5%;
