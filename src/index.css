@@ -152,6 +152,10 @@ ul {
 
 @media only screen and (max-width: 600px) {
 
+      html {
+        overflow: hidden;
+      }
+
       .movie-details-container img{
         /* visibility: hidden; */
         width: 200%;
@@ -243,8 +247,9 @@ ul {
       }
 
       .selected-image-container {
-        height: 10em;
-        width: 10em;
+        height: 18em;
+        width: 13em;
+        margin-bottom: 80%;
         background-size: cover;
         -webkit-box-shadow: 20px 20px 20px #000000;
         -moz-box-shadow: 20px 20px 20px #000000;
