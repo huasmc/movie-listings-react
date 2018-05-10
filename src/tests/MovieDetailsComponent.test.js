@@ -30,3 +30,9 @@ it('should render image tag with specified css selector', () => {
   const img = wrapper.find('.selected-movie-image');
   expect(img.length).toEqual(1);
 });
+
+it('should render 5 p tags', () => {
+  const wrapper = shallow(<MovieDetailsComponent />);
+  const p = wrapper.find('p');
+  expect(p.length).toEqual(5);
+});
