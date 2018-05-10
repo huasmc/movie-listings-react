@@ -1,6 +1,6 @@
 ## What is it
 
-React web-app that uses OMDP API to render a list of movies based on user's request and get information based on the user's selected movie. 
+React web-app that uses OMDP API to render a list of movies based on user's request and get information based on the user's selected movie.
 
 The stack:
 
@@ -42,6 +42,8 @@ User's interaction:
 # Things to improve/currently working on.
 
 - Improve design.
+
+- Set-up requests to use env variable for API key.
 
 - Add animations.
 
