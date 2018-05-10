@@ -15,18 +15,18 @@ it('should render div with preview-info class', () => {
 
 it('should render ul tags', () => {
   const wrapper = shallow(<PreviewInfoComponent/>);
-  const div = wrapper.find('ul')
-  expect(div.length).toEqual(1);
+  const ul = wrapper.find('ul')
+  expect(ul.length).toEqual(1);
 });
 
 it('should render two li tags', () => {
   const wrapper = shallow(<PreviewInfoComponent/>);
-  const div = wrapper.find('li')
-  expect(div.length).toEqual(2);
+  const li = wrapper.find('li')
+  expect(li.length).toEqual(2);
 });
 
 it('should render a li tag with class type', () => {
   const wrapper = shallow(<PreviewInfoComponent/>);
-  const div = wrapper.find('.movie-type')
-  expect(div.length).toEqual(1);
-})
+  const li = wrapper.find('.movie-type')
+  expect(li.length).toEqual(1);
+});
