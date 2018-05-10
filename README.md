@@ -22,6 +22,10 @@ cd movie-listings-react
 ```
 npm i
 ```
+- Add api key as environment variable:
+```
+REACT_APP_API_KEY=yourkey
+```
 - Run the app.
 ```
 npm start
