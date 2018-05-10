@@ -230,4 +230,25 @@ ul {
          -ms-transition: all 3s ease-in;
          transition: all 3s ease-in;
       }
+
+      .movie-details-container {
+        height: 100%;
+        width:22%;
+        font-weight: bold;
+        font-size: 1em;
+        text-align: left;
+        margin-top: 5%;
+        padding-left: 5%;
+        color: white;
+      }
+
+      .selected-image-container {
+        height: 10em;
+        width: 10em;
+        background-size: cover;
+        -webkit-box-shadow: 20px 20px 20px #000000;
+        -moz-box-shadow: 20px 20px 20px #000000;
+        box-shadow: 20px 20px 20px #000000;
+      }
+
   }
