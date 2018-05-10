@@ -7,7 +7,7 @@ it('should render without crashing', () => {
  shallow(<InputContainer />);
 })
 
-xit('should render input box', () => {
+it('should render input box', () => {
  const wrapper = shallow(<InputContainer />);
  const input = wrapper.find('.input-box');
  expect(input.exists()).toEqual(true);
