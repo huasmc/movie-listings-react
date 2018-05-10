@@ -159,6 +159,10 @@ ul {
         font-size: 0.7em;
       }
 
+      p {
+        margin: 0;
+      }
+
       .search-wrapper {
         visibility: hidden;
       }
