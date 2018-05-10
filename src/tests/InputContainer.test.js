@@ -5,13 +5,19 @@ import renderer from 'react-test-renderer';
 
 it('should render without crashing', () => {
  shallow(<InputContainer />);
-})
+});
 
 it('should render input box', () => {
  const wrapper = shallow(<InputContainer />);
+ const input = wrapper.find('input');
+ expect(input.exists()).toEqual(true);
+});
+
+it('should render input box with input-box selector', () => {
+ const wrapper = shallow(<InputContainer />);
  const input = wrapper.find('.input-box');
  expect(input.exists()).toEqual(true);
-})
+});
 
 it('should match the snapshot', () => {
  const component = renderer.create(
