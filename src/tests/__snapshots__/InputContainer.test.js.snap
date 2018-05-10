@@ -4,6 +4,9 @@ exports[`should match the snapshot 1`] = `
 <div>
   <input
     className="input-box"
+    onKeyPress={[Function]}
+    onSubmit={[Function]}
   />
+  /&gt;
 </div>
 `;
