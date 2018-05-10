@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div>
         <MovieListContainer searchParams={ this.state.searchParams }/>
-        <SearchContainer updateSearch={ () => this.updateSearchParams.bind(this) }/>
+        <SearchContainer updateSearch={ (choice) => this.updateSearchParams.bind(this, choice) }/>
       </div>
     );
   }
