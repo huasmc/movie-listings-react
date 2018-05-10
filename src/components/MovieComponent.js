@@ -10,10 +10,9 @@ class MovieComponent extends React.Component {
     } else {
       poster = ""
     }
-
     return(
       <div className="movie-component" style={{backgroundImage: `url(${poster})`}}>
-      <PreviewInfoComponent movie={ this.props.movie }/>
+        <PreviewInfoComponent movie={this.props.movie}/>
       </div>
     );
   }
