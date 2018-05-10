@@ -152,6 +152,15 @@ ul {
 
 @media only screen and (max-width: 600px) {
 
+      .movie-details-container img{
+        /* visibility: hidden; */
+        width: 200%;
+        font-size: 20%;
+      }
+
+      .search-wrapper {
+        visibility: hidden;
+      }
       .movie-list-wrapper {
         /* margin: 10%; */
         height: 100vh;
