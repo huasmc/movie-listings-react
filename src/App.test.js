@@ -9,3 +9,11 @@ xit('should render MovieListContainer', () => {
   const container = wrapper.find('MovieListContainer')
   expect(container.length).toEqual(1);
 });
+
+it('should be able to update searchParams', () => {
+  const wrapper = mount(<App />);
+  const inst = wrapper.instance();
+  inst.updateSearchParams('action');
+  actual = wrapper.state().searchParams;
+  expect(actual).toEqual('action');
+})

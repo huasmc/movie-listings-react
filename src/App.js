@@ -10,6 +10,8 @@ class App extends Component {
       searchParams: "comedy"
     }
   }
+
+
   render() {
     return (
       <div>
