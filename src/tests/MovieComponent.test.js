@@ -19,3 +19,9 @@ it('should have div with style backgroundImage property', () => {
   const div = wrapper.find('.movie-component');
   expect(div.prop('style'));
 });
+
+it('should match the snapshot', () => {
+  const component = renderer.create(<MovieComponent />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
