@@ -5,6 +5,7 @@ body {
   margin: 0px;
   height: 100%;
   overflow: hidden;
+  font-family: monospace;
 }
 
 #gradient
@@ -69,5 +70,19 @@ body {
   font-weight: bold;
   font-size: 5em;
   color: white;
-  font-family: monospace;
+}
+
+.preview-info {
+  color: white;
+  float: left;
+  margin-top: 50%;
+  font-weight: bold;
+  font-size: 1.7em;
+  text-align: left;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
 }
