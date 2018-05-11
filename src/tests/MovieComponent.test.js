@@ -20,6 +20,13 @@ it('should have div with style backgroundImage property', () => {
   expect(div.prop('style'));
 });
 
+it('should have div with style prop', () => {
+  const wrapper = shallow(<MovieComponent />);
+  const div = wrapper.find('.movie-component')
+  const expected = JSON.stringify({"backgroundImage": "url()"})
+  expect(JSON.stringify(div.prop('style'))).toEqual(expected);
+});
+
 it('should match the snapshot', () => {
   const component = renderer.create(<MovieComponent />);
   let tree = component.toJSON();
