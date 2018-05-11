@@ -33,7 +33,7 @@ body {
 
 
 .movie-list-wrapper {
-  margin-top: 10%;
+  margin-top: 8%;
   display: inline-block;
   height: 50%;
   width: 50%;
@@ -70,7 +70,7 @@ body {
 }
 
 .search-wrapper {
-  margin: 10%;
+  margin: 14%;
   height: 60vh;
   width: 30%;
   overflow: hidden;
@@ -84,7 +84,7 @@ body {
 .genre-container {
   margin: 0;
   font-weight: bold;
-  font-size: 5em;
+  font-size: 400%;
   color: white;
 }
 
