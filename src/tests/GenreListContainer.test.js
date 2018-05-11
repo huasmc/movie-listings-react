@@ -54,3 +54,9 @@ xit('should render thriller GenreComponent with updateSearch prop', () => {
   const component = wrapper.find('GenreComponent').at(2)
   expect(component.prop('updateSearch').length).toEqual(1);
 });
+
+it('should match the snapshot', () => {
+  const component = renderer.create(<GenreListContainer />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
