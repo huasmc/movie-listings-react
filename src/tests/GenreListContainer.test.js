@@ -24,3 +24,9 @@ it('should render GenreComponent with genre prop comedy', () => {
   const component = wrapper.find('GenreComponent').at(0)
   expect(component.prop('genre')).toEqual('comedy');
 });
+
+it('should render GenreComponent with genre prop action', () => {
+  const wrapper = mount(<GenreListContainer />);
+  const component = wrapper.find('GenreComponent').at(1)
+  expect(component.prop('genre')).toEqual('action');
+});
