@@ -19,10 +19,10 @@ it('should render ul tags', () => {
   expect(ul.length).toEqual(1);
 });
 
-it('should render two li tags', () => {
+it('should render three li tags', () => {
   const wrapper = shallow(<PreviewInfoComponent/>);
   const li = wrapper.find('li')
-  expect(li.length).toEqual(2);
+  expect(li.length).toEqual(3);
 });
 
 it('should render a li tag with class movie-type', () => {
