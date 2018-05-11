@@ -15,6 +15,12 @@ it('should render div with genre-container class', () => {
 
 it('should render three GenreComponent', () => {
   const wrapper = mount(<GenreListContainer />);
-  const container = wrapper.find('GenreComponent')
-  expect(container.length).toEqual(3);
+  const components = wrapper.find('GenreComponent')
+  expect(components.length).toEqual(3);
+});
+
+it('should render GenreComponent with genre prop comedy', () => {
+  const wrapper = mount(<GenreListContainer />);
+  const component = wrapper.find('GenreComponent').at(0)
+  expect(component.prop('genre')).toEqual('comedy');
 });
