@@ -27,11 +27,17 @@ it('should have div with style prop', () => {
   expect(JSON.stringify(div.prop('style'))).toEqual(expected);
 });
 
-it('should render a PreviewInfoComponent', () => {
+it('should render PreviewInfoComponent', () => {
   const wrapper = mount(<MovieComponent />);
   const component = wrapper.find('PreviewInfoComponent')
   expect(component.length).toEqual(1);
-})
+});
+
+xit('should render PreviewInfoComponent with movie prop', () => {
+  const wrapper = mount(<MovieComponent />);
+  const component = wrapper.find('PreviewInfoComponent')
+  expect(component.prop('movie')).toEqual('movie');
+});
 
 it('should match the snapshot', () => {
   const component = renderer.create(<MovieComponent />);
