@@ -28,23 +28,23 @@ body {
   width: 100%;
   overflow-y: scroll;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 
 .movie-list-wrapper {
-  margin-top: 8%;
+  /* margin-top: 8%; */
   display: inline-block;
-  height: 50%;
-  width: 50%;
+  height: 100vh;
+  width: 140%;
   overflow-y: scroll;
 }
 
 .movie-list-container {
   position: relative;
-  margin: 5%;
+  /* margin: 5%; */
   padding: 0;
-  height: 60vh ;
+  height: 50vh ;
   display: block;
 }
 
@@ -70,9 +70,9 @@ body {
 }
 
 .search-wrapper {
-  margin: 14%;
+  margin: 13% 12%;
   height: 60vh;
-  width: 30%;
+  width: 60%;
   overflow: hidden;
 }
 
@@ -152,7 +152,7 @@ ul {
   font-size: 1.4em;
   text-align: left;
   margin-top: 10%;
-  padding-left: 5%;
+  margin-right: 10%;
   color: white;
 }
 
