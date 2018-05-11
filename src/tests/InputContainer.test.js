@@ -31,6 +31,13 @@ xit('should render form with onSubmit prop', () => {
  expect(JSON.stringify(form.prop('onSubmit'))).toEqual("");
 });
 
+xit('should render input box with onKeyPress prop', () => {
+ const wrapper = shallow(<InputContainer />);
+ const input = wrapper.find('.input-box');
+ expect(JSON.stringify(input.prop('onKeyPress'))).toEqual("");
+});
+
+
 it('should match the snapshot', () => {
  const component = renderer.create(
   <InputContainer />
