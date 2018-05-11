@@ -44,7 +44,7 @@ body {
   position: relative;
   /* margin: 5%; */
   padding: 0;
-  height: 60vh ;
+  height: 70vh ;
   display: block;
 }
 
@@ -196,7 +196,7 @@ ul {
         display: flex;
         flex-direction: column;
         margin-top: 20%;
-        width: 50%;
+        width: 80%;
         padding: 0;
         overflow: hidden;
       }
@@ -211,7 +211,7 @@ ul {
       .movie-list-wrapper {
         /* margin: 10%; */
         height: 100vh;
-        width: 300%;
+        width: 100%;
         /* overflow: auto; */
         float: right;
       }
