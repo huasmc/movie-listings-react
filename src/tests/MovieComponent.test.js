@@ -27,6 +27,12 @@ it('should have div with style prop', () => {
   expect(JSON.stringify(div.prop('style'))).toEqual(expected);
 });
 
+it('should render a PreviewInfoComponent', () => {
+  const wrapper = mount(<MovieComponent />);
+  const component = wrapper.find('PreviewInfoComponent')
+  expect(component.length).toEqual(1);
+})
+
 it('should match the snapshot', () => {
   const component = renderer.create(<MovieComponent />);
   let tree = component.toJSON();
