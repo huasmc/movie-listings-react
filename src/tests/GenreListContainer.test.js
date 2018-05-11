@@ -36,3 +36,24 @@ it('should render GenreComponent with genre prop thriller', () => {
   const component = wrapper.find('GenreComponent').at(2)
   expect(component.prop('genre')).toEqual('thriller');
 });
+
+xit('should render comedy GenreComponent with updateSearch prop', () => {
+  const wrapper = mount(<GenreListContainer />);
+  const component = wrapper.find('GenreComponent').at(0)
+  console.log(component.prop('updateSearch'));
+  expect(component.prop('updateSearch').length).toEqual(1);
+});
+
+xit('should render action GenreComponent with updateSearch prop', () => {
+  const wrapper = mount(<GenreListContainer />);
+  const component = wrapper.find('GenreComponent').at(1)
+  console.log(component.prop('updateSearch'));
+  expect(component.prop('updateSearch').length).toEqual(1);
+});
+
+xit('should render thriller GenreComponent with updateSearch prop', () => {
+  const wrapper = mount(<GenreListContainer />);
+  const component = wrapper.find('GenreComponent').at(2)
+  console.log(component.prop('updateSearch'));
+  expect(component.prop('updateSearch').length).toEqual(1);
+});
