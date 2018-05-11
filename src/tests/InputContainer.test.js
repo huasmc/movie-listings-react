@@ -19,6 +19,12 @@ it('should render input box with input-box selector', () => {
  expect(input.exists()).toEqual(true);
 });
 
+it('should render form', () => {
+ const wrapper = shallow(<InputContainer />);
+ const form = wrapper.find('form');
+ expect(form.exists()).toEqual(true);
+});
+
 it('should match the snapshot', () => {
  const component = renderer.create(
   <InputContainer />
