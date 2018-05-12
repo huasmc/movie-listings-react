@@ -42,8 +42,8 @@ class App extends Component {
       <div className="App">
         <MovieListContainer searchParams={ this.state.searchParams } updateCurrentMovie={ this.updateCurrentMovie.bind(this) }/>
         <div className="select-search">
-          <SearchContainer updateSearch={this.updateSearch.bind(this)}/>
           <MovieDetailsComponent movie={ this.state.currentMovie }/>
+          <SearchContainer updateSearch={this.updateSearch.bind(this)}/>
         </div>
       </div>
     );
