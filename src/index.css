@@ -207,7 +207,6 @@ ul {
 
 @media only screen and (max-width: 400px) {
 
-
       .movie-list-wrapper {
         /* margin: 10%; */
         height: 100vh;
@@ -327,7 +326,7 @@ ul {
       }
     }
 
-@media only screen and (max-height: 400px) {
+@media only screen and ( min-width: 400px) {
   .movie-list-wrapper {
     /* margin: 10%; */
     height: 100vh;
@@ -423,10 +422,10 @@ ul {
 
   .selected-image-container {
     width: auto;
-    margin: 10% 5% 5% 30%;
+    margin: 10% 5% 0% 30%;
     align-items: center;
-    height: 45%;
-    width: 40%;
+    height: 70%;
+    width: 30%;
     background-size: cover;
     -webkit-box-shadow: 20px 20px 20px #000000;
     -moz-box-shadow: 20px 20px 20px #000000;
