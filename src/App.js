@@ -51,8 +51,10 @@ class App extends Component {
     return (
       <div className="App">
         <MovieListContainer searchParams={ this.state.searchParams } updateCurrentMovie={ this.updateCurrentMovie.bind(this) }/>
-        <SearchContainer updateSearch={this.updateSearch.bind(this)}/>
-        <MovieDetailsComponent movie={ this.state.currentMovie }/>
+        <div className="search-details-container">
+          <SearchContainer updateSearch={this.updateSearch.bind(this)}/>
+          <MovieDetailsComponent movie={ this.state.currentMovie }/>
+        </div>
       </div>
     );
   }

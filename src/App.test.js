@@ -54,7 +54,7 @@ it('should be able to update the hiddenState', () => {
 
 it('should have a div with search-details-container selector', () => {
   const wrapper = shallow(<App />);
-  const actual = wrapper.find('search-details-contaner');
+  const actual = wrapper.find('.search-details-container');
   expect(actual.exists()).toEqual(true);
 });
 
