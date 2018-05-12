@@ -5,7 +5,7 @@ class MovieComponent extends React.Component {
 
   onClick(id) {
     this.props.updateCurrentMovie(id);
-    // this.props.toggleHidden();
+    this.props.toggleHidden();
   }
 
   render() {
@@ -18,7 +18,7 @@ class MovieComponent extends React.Component {
       poster = ""
     }
     return(
-      <div className="movie-component" style={{backgroundImage: `url(${poster})`}} onClick={() => this.props.updateCurrentMovie(id)}>
+      <div className="movie-component" style={{backgroundImage: `url(${poster})`}} onClick={() => this.onClick(id)}>
         <PreviewInfoComponent movie={this.props.movie}/>
       </div>
     );

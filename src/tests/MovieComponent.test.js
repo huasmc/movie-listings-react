@@ -43,7 +43,7 @@ xit('should render movie-component div with onClick prop', () => {
 xit('should have an onClick function', () => {
   const wrapper = shallow(<MovieComponent />);
   const inst = wrapper.instance();
-  const actual = inst.onClick
+  const actual = inst.onClick()
   expect(actual).toEqual(true);
 })
 
