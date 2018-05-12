@@ -19,11 +19,12 @@ it('should render MovieDetailsComponent', () => {
   expect(container.length).toEqual(1);
 });
 
-it('should render SearchContaienr', () => {
-  conts wrapper = shallow(<SearchContainer />);
+it('should render SearchContainer', () => {
+  const wrapper = shallow(<SelectedImageContainer />);
   const container = wrapper.find('SearchContainer');
   expect(container.length).toEqual(1);
-})
+});
+
 xit('should match the snapshot', () => {
   const component = renderer.create(<SelectedImageContaine />);
   let tree = component.toJSON();
