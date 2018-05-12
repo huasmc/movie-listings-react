@@ -25,6 +25,13 @@ it('should render SearchContainer', () => {
   expect(container.length).toEqual(1);
 });
 
+it('should render MovieDetailsComponent wiht movie prop', () => {
+  const wrapper = shallow(<SelectedMovieContainer />);
+  const container = wrapper.find('MovieDetailsComponent');
+  const prop = container.prop('movie');
+  expect(prop.exists()).toEqual('true')
+})
+
 xit('should match the snapshot', () => {
   const component = renderer.create(<SelectedImageContaine />);
   let tree = component.toJSON();
