@@ -13,6 +13,12 @@ it('should render div with search-details-container class', () => {
   expect(div.length).toEqual(1);
 });
 
+it('should render div search-details-container with style prop', () => {
+  const wrapper = shallow(<SelectedMovieContainer />);
+  const div = wrapper.find('.search-details-container')
+  expect(div.prop('style')).toEqual(1);
+});
+
 it('should render MovieDetailsComponent', () => {
   const wrapper = shallow(<SelectedMovieContainer />);
   const container = wrapper.find('MovieDetailsComponent');
