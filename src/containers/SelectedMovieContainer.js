@@ -9,8 +9,24 @@ class SelectedMovieContainer extends React.Component {
     this.state = {
       width: 0
     }
+    this._animate = new ReactStateAnimation(this)
   }
 
+  componentDidMount() {
+    this.start();
+  }
+
+  onClick() {
+    this._animate.expOut('width', 0, 500);
+  }
+
+  start() {
+    this._animate.expIn('width', 100000, 1500)
+  }
+
+  stop() {
+      this._animate.stop()
+  }
 
   getStyle() {
     return {
@@ -20,7 +36,7 @@ class SelectedMovieContainer extends React.Component {
 
   render() {
     return(
-      <div className="search-details-container" >
+      <div className="search-details-container" style={ this.getStyle() } onClick={() => this.onClick() }>
         <MovieDetailsComponent movie={ this.props.movie }/>
         <SearchContainer updateSearch={ this.props.updateSearch }/>
       </div>

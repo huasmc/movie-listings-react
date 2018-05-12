@@ -37,6 +37,7 @@ body {
   display: inline-block;
   min-height: 100vh;
   max-width: 40%;
+  min-width: 40%;
   overflow-y: scroll;
 }
 
