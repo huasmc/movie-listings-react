@@ -20,7 +20,7 @@ it('should have a currentMovie state of undefined', () => {
   const wrapper = shallow(<App />);
   const actual = wrapper.state().currentMovie;
   expect(actual).toEqual(undefined);
-})
+});
 
 it('should be able to update searchParams', () => {
   const wrapper = mount(<App />);
@@ -29,6 +29,12 @@ it('should be able to update searchParams', () => {
   const actual = inst.state.searchParams;
   expect(actual).toEqual('action');
 });
+
+it('should have a toggleHidden state of false', () => {
+  const wrapper = shallow(<App />);
+  const actual = wrapper.state().hiddenState;
+  expect(actual).toEqual(false);
+})
 
 xit('should be able to update current movie state', () => {
   const wrapper = mount(<App />);
