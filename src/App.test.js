@@ -56,6 +56,7 @@ it('should have a div with search-details-container selector when hiddenState is
   const wrapper = shallow(<App />);
   const inst = wrapper.instance();
   inst.toggleHidden()
+  wrapper.update();
   const actual = wrapper.find('.search-details-container');
   expect(actual.exists()).toEqual(true);
 });
