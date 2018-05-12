@@ -5,11 +5,19 @@ import ReactStateAnimation from 'react-state-animation'
 
 class SelectedMovieContainer extends React.Component {
   constructor(props) {
-      super(props)
-      this.state = {
-          width: 0
-      }
+    super(props)
+    this.state = {
+      width: 0
+    }
   }
+
+
+  getStyle() {
+    return {
+      width: this.state.width,
+    }
+  }
+
   render() {
     return(
       <div className="search-details-container" >

@@ -37,11 +37,11 @@ it('should have width state of 0', () => {
   expect(width).toEqual(0);
 });
 
-it('should have getStyle()', () => {
+it('should getStyle()', () => {
   const wrapper = shallow(<SelectedMovieContainer />);
   const inst = wrapper.instance();
   const actual = inst.getStyle()
-  const expected = {width: this.state.width}
+  const expected = {width: 0}
   expect(JSON.stringify(actual)).toEqual(JSON.stringify(expected));
 })
 
