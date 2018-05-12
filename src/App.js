@@ -10,7 +10,8 @@ class App extends Component {
 
     this.state = {
       searchParams: "pirates",
-      currentMovie: undefined
+      currentMovie: undefined,
+      hiddenState: false
     }
     this.updateSearch.bind(this)
     this.updateCurrentMovie.bind(this)
