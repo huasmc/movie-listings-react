@@ -4,7 +4,7 @@ class SelectedImageContainer extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className="search-details-container">
 
       </div>
     );
