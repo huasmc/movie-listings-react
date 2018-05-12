@@ -36,7 +36,7 @@ body {
   /* margin-top: 8%; */
   display: inline-block;
   min-height: 100vh;
-  max-width: 40%;
+  max-width: 60%;
   overflow-y: scroll;
 }
 
@@ -207,10 +207,11 @@ ul {
 
 @media only screen and (max-width: 400px) {
 
+
       .movie-list-wrapper {
         /* margin: 10%; */
         height: 100vh;
-        max-width: 100%;
+        width: 170%;
         /* overflow: auto; */
         float: right;
       }
