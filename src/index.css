@@ -207,11 +207,10 @@ ul {
 
 @media only screen and (max-width: 400px) {
 
-
       .movie-list-wrapper {
         /* margin: 10%; */
         height: 100vh;
-        width: 170%;
+        max-width: 100%;
         /* overflow: auto; */
         float: right;
       }
