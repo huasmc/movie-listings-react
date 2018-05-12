@@ -17,11 +17,11 @@ class SelectedMovieContainer extends React.Component {
   }
 
   onClick() {
-    this._animate.expOut('width', 0, 500);
+    this._animate.cubicOut('width', 0, 500);
   }
 
   start() {
-    this._animate.expIn('width', 100000, 1500)
+    this._animate.cubicIn('width', 100000, 1500)
   }
 
   stop() {

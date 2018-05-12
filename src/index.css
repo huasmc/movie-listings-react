@@ -201,9 +201,6 @@ ul {
     display: inline-block;
   }
 
-
-
-
 @media only screen and (max-width: 400px) {
 
       .movie-list-wrapper {
@@ -271,10 +268,9 @@ ul {
 
       .selected-image-container {
         width: auto;
-        margin: 30% 5% 30% 5%;
-        align-items: center;
-        height: 45%;
-        width: 85%;
+        margin: 5% 5% 0% 10%;
+        height: 100%;
+        width: 80%;
         background-size: cover;
         -webkit-box-shadow: 20px 20px 20px #000000;
         -moz-box-shadow: 20px 20px 20px #000000;
@@ -284,6 +280,7 @@ ul {
 
       .movie-data-container {
         font-size: 10px;
+        margin-left:  10%;
       }
 
       .input-box {

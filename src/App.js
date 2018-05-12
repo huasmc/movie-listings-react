@@ -50,7 +50,7 @@ class App extends Component {
     return (
       <div className="App">
         <MovieListContainer searchParams={ this.state.searchParams } updateCurrentMovie={ this.updateCurrentMovie.bind(this) } toggleHidden={ this.toggleHidden.bind(this) }/>
-        { this.state.hiddenState && <SelectedMovieContainer movie={ this.state.currentMovie } updateCurrentMovie={ this.updateSearch.bind(this) }/>}
+        { this.state.hiddenState && <SelectedMovieContainer movie={ this.state.currentMovie } updateCurrentMovie={ this.updateSearch.bind(this) } toggleHidden={ this.toggleHidden.bind(this) }/>}
       </div>
     );
   }
