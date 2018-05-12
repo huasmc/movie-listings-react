@@ -76,6 +76,15 @@ xit('should render SelectedMovieContainer with movie prop', () => {
   expect(actual.exists()).toEqual(true);
 });
 
+xit('should pass updateSearch as prop', () => {
+  const wrapper = mount(<App />);
+  const inst = wrapper.instance();
+  const container = inst.find('SelectedMovieContainer');
+  container.props()
+  const actual = container.prop('updateSearch');
+  expect(actual.exists()).toEqual(true);
+});
+
 xit('should be able to update current movie state', () => {
   const wrapper = mount(<App />);
   const inst = wrapper.instance();
