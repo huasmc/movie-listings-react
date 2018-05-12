@@ -7,10 +7,10 @@ it('should render without crashing', () => {
   shallow(<MovieDetailsComponent />);
 });
 
-it('should render two divs', () => {
+it('should render three divs', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
   const div = wrapper.find('div')
-  expect(div.length).toEqual(2);
+  expect(div.length).toEqual(3);
 });
 
 it('should have a div with movie-details-container selector', () => {
