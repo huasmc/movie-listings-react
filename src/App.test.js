@@ -50,7 +50,7 @@ it('should be able to update the hiddenState', () => {
   inst.updateHiddenState(true);
   const actual = wrapper.state().hiddenState;
   expect(actual).toEqual(true);
-})
+});
 
 xit('should be able to update current movie state', () => {
   const wrapper = mount(<App />);

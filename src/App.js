@@ -17,6 +17,12 @@ class App extends Component {
     this.updateCurrentMovie.bind(this)
   }
 
+  updateHiddenState(boolean) {
+    this.setState({
+      hiddenState: boolean
+    })
+  }
+
   updateSearch(args) {
     this.setState({
       searchParams: args
