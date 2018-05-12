@@ -33,6 +33,13 @@ it('should render PreviewInfoComponent', () => {
   expect(component.length).toEqual(1);
 });
 
+xit('should render movie-component div with onClick prop', () => {
+  const wrapper = shallow(<MovieComponent />);
+  const div = wrapper.find('.movie-component');
+  const actual = div.prop('onClick');
+  expect(actual.exists()).toEqual(true);
+});
+
 xit('should render PreviewInfoComponent with movie prop', () => {
   const wrapper = mount(<MovieComponent />);
   const component = wrapper.find('PreviewInfoComponent')
