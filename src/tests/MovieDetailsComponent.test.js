@@ -60,3 +60,9 @@ it('should render fifth text rating', () => {
   const p = wrapper.find('p').at(4);
   expect(p.text()).toEqual('Rating: ');
 });
+
+it('should match the snapshot', () => {
+  const component = renderer.create(<MovieDetailsComponent />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});

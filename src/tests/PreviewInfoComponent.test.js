@@ -19,10 +19,10 @@ it('should render ul tags', () => {
   expect(ul.length).toEqual(1);
 });
 
-it('should render two li tags', () => {
+it('should render three li tags', () => {
   const wrapper = shallow(<PreviewInfoComponent/>);
   const li = wrapper.find('li')
-  expect(li.length).toEqual(2);
+  expect(li.length).toEqual(3);
 });
 
 it('should render a li tag with class movie-type', () => {
@@ -37,14 +37,20 @@ it('should render a li tag with class movie-title', () => {
   expect(li.length).toEqual(1);
 });
 
-xit('should render li tag TITLE with passed props'), () =>{
+xit('should render li tag TITLE with passed props', () =>{
   const wrapper = shallow(<PreviewInfoComponent/>);
   const li = wrapper.find('.movie-type')
   expect(li.length).toEqual(1);
-}
+});
 
-xit('should render li tag TYPE with passed props'), () =>{
+xit('should render li tag TYPE with passed props', () =>{
   const wrapper = shallow(<PreviewInfoComponent/>);
   const li = wrapper.find('.movie-type')
   expect(li.length).toEqual(1);
-}
+});
+
+it('should match the snapshot', () => {
+  const component = renderer.create(<PreviewInfoComponent />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});

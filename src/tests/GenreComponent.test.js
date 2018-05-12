@@ -18,3 +18,9 @@ it('should match the snapshot', () => {
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+xit('should have p tag with onClick prop', () => {
+  const wrapper = shallow(<GenreComponent />);
+  const p = wrapper.find('p');
+  expect(p.prop('onClick')).exists().toEqual(true);
+})
