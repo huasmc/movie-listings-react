@@ -64,7 +64,7 @@ it('shouldnt render div with search-details-container selector when hiddenState 
   const wrapper = shallow(<App />);
   const actual = wrapper.find('.search-details-container');
   expect(actual.exists()).toEqual(false);
-})
+});
 
 xit('should be able to update current movie state', () => {
   const wrapper = mount(<App />);
