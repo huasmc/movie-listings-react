@@ -52,6 +52,12 @@ it('should be able to update the hiddenState', () => {
   expect(actual).toEqual(true);
 });
 
+it('should have a div with search-details-container selector', () => {
+  const wrapper = shallow(<App />);
+  const actual = wrapper.find('search-details-contaner');
+  expect(actual.exists()).toEqual(true);
+});
+
 xit('should be able to update current movie state', () => {
   const wrapper = mount(<App />);
   const inst = wrapper.instance();
