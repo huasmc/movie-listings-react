@@ -25,10 +25,10 @@ it('should render SearchContainer', () => {
   expect(container.length).toEqual(1);
 });
 
-it('should have width state', () => {
-  const wrapper = shallow(<SelectedMovieContainer />);
+it('should have width state of 0', () => {
+  const wrapper = mount(<SelectedMovieContainer />);
   const width = wrapper.state().width;
-  expect(width.exists()).toEqual(true);
+  expect(width).toEqual(0);
 });
 
 xit('should render MovieDetailsComponent wiht movie prop', () => {
