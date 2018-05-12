@@ -25,6 +25,12 @@ it('should render form', () => {
  expect(form.exists()).toEqual(true);
 });
 
+it('should have input with placeholder prop search', () => {
+  const wrapper = shallow(<InputContainer />);
+  const input = wrapper.find('input');
+  expect(input.prop('placeholder')).toEqual('SEARCH');
+});
+
 xit('should render form with onSubmit prop', () => {
  const wrapper = shallow(<InputContainer />);
  const form = wrapper.find('form');
