@@ -2,7 +2,7 @@ import React from 'react';
 import MovieDetailsComponent from '../components/MovieDetailsComponent'
 import SearchContainer from './SearchContainer.js'
 
-class SelectedImageContainer extends React.Component {
+class SelectedMovieContainer extends React.Component {
 
   render() {
     return(
@@ -14,4 +14,4 @@ class SelectedImageContainer extends React.Component {
   }
 }
 
-export default SelectedImageContainer;
+export default SelectedMovieContainer;

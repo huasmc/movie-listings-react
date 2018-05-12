@@ -52,20 +52,22 @@ it('should be able to update the hiddenState', () => {
   expect(actual).toEqual(true);
 });
 
-it('should render SelectedImageContainer selector when hiddenState is true', () => {
+it('should render SelectedMovieContainer selector when hiddenState is true', () => {
   const wrapper = shallow(<App />);
   const inst = wrapper.instance();
   inst.toggleHidden()
   wrapper.update();
-  const actual = wrapper.find('SelectedImageContainer');
+  const actual = wrapper.find('SelectedMovieContainer');
   expect(actual.exists()).toEqual(true);
 });
 
-it('shouldnt render div with SelectedImageContainer selector when hiddenState is false', () => {
+it('shouldnt render div with SelectedMovieContainer selector when hiddenState is false', () => {
   const wrapper = shallow(<App />);
-  const actual = wrapper.find('SelectedImageContainer');
+  const actual = wrapper.find('SelectedMovieContainer');
   expect(actual.exists()).toEqual(false);
 });
+
+// it('should render SelectedMovieContainer with currentMovie')
 
 xit('should be able to update current movie state', () => {
   const wrapper = mount(<App />);
