@@ -17,6 +17,10 @@ class App extends Component {
     this.updateCurrentMovie.bind(this)
   }
 
+  toggleHidden() {
+     this.state.hiddenState ? this.updateHiddenState(false) : this.updateHiddenState(true)
+  }
+
   updateHiddenState(boolean) {
     this.setState({
       hiddenState: boolean
@@ -28,7 +32,6 @@ class App extends Component {
       searchParams: args
     })
     this.forceUpdate()
-    console.log(args);
   }
 
   updateCurrentMovie(args) {
