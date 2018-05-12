@@ -1,6 +1,7 @@
 import React from 'react';
 import MovieDetailsComponent from '../components/MovieDetailsComponent'
 import SearchContainer from './SearchContainer.js'
+import ReactStateAnimation from 'react-state-animation'
 
 class SelectedMovieContainer extends React.Component {
 

@@ -25,6 +25,12 @@ it('should render SearchContainer', () => {
   expect(container.length).toEqual(1);
 });
 
+it('should have width state', () => {
+  const wrapper = shallow(<SelectedMovieContainer />);
+  const width = wrapper.state().width;
+  expect(width.exists()).toEqual(true);
+});
+
 xit('should render MovieDetailsComponent wiht movie prop', () => {
   const wrapper = shallow(<SelectedMovieContainer />);
   const container = wrapper.find('MovieDetailsComponent');
