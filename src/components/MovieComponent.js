@@ -3,6 +3,11 @@ import PreviewInfoComponent from './PreviewInfoComponent'
 
 class MovieComponent extends React.Component {
 
+  onClick(id) {
+    this.props.updateCurrentMovie(id);
+    // this.props.toggleHidden();
+  }
+
   render() {
     let poster;
     let id;
