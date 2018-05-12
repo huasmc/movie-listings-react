@@ -71,8 +71,7 @@ body {
 
 .search-wrapper {
   height: 40vh;
-  margin-top: 0;
-  padding-top: 20%;
+  margin-top: 20%;
   display: inline-block;
   overflow: hidden;
 }
@@ -324,7 +323,7 @@ ul {
       }
 
       .search-wrapper {
-        margin-top: 50%;
+        padding-top: 50%;
       }
 
 
