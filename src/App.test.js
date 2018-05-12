@@ -17,3 +17,17 @@ it('should be able to update searchParams', () => {
   const actual = inst.state.searchParams;
   expect(actual).toEqual('action');
 });
+
+it('should set stateHidden', () => {
+  const wrapper = shallow(<App />);
+  const inst = wrapper.instance();
+  inst.setHidden(true);
+  expect(wrapper.state().stateHidden).toEqual(true);
+});
+
+it('should toggleHidden', () => {
+  const wrapper = shallow(<App />);
+  const inst = wrapper.instance();
+  inst.toggleHidden();
+  expect(wrapper.state().stateHidden).toEqual(true);
+})

@@ -10,10 +10,12 @@ class App extends Component {
 
     this.state = {
       searchParams: "pirates",
-      currentMovie: undefined
+      currentMovie: undefined,
+      stateHidden: false
     }
     this.updateSearch.bind(this)
     this.updateCurrentMovie.bind(this)
+    this.toggleHidden.bind(this)
   }
 
   updateSearch(args) {
@@ -37,14 +39,28 @@ class App extends Component {
     })
   }
 
+  toggleHidden() {
+    this.state.stateHidden ? this.setHidden(false) : this.setHidden(true)
+  }
+
+  setHidden(args) {
+    this.setState({
+      stateHidden: args
+    })
+  }
+
+
+
   render() {
     return (
       <div className="App">
-        <MovieListContainer searchParams={ this.state.searchParams } updateCurrentMovie={ this.updateCurrentMovie.bind(this) }/>
-        <div className="select-search">
+        <MovieListContainer searchParams={ this.state.searchParams } toggleHidden={this.toggleHidden.bind(this) } updateCurrentMovie={ this.updateCurrentMovie.bind(this) }/>
+        {this.state.stateHidden &&
+          <div className="select-search">
           <MovieDetailsComponent movie={ this.state.currentMovie }/>
           <SearchContainer updateSearch={this.updateSearch.bind(this)}/>
         </div>
+        }
       </div>
     );
   }
