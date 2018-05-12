@@ -30,10 +30,18 @@ it('should be able to update searchParams', () => {
   expect(actual).toEqual('action');
 });
 
-it('should have a toggleHidden state of false', () => {
+it('should have a hiddenState of false', () => {
   const wrapper = shallow(<App />);
   const actual = wrapper.state().hiddenState;
   expect(actual).toEqual(false);
+});
+
+it('should be able to toggle the hiddenState', () => {
+  const wrapper = shallow(<App />);
+  const inst = wrapper.instance();
+  inst.toggleHidden();
+  const actual = wrapper.state().hiddenState;
+  expect(actual).toEqual(true);
 })
 
 xit('should be able to update current movie state', () => {
