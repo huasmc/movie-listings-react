@@ -29,7 +29,7 @@ class App extends Component {
   updateSearch(args) {
     this.setState({
       searchParams: args
-    })
+    }, () => this.forceUpdate() )
     this.forceUpdate()
   }
 
