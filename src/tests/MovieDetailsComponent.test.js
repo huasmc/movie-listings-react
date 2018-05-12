@@ -31,19 +31,19 @@ it('should render div tag with specified css selector', () => {
   expect(div.length).toEqual(1);
 });
 
-it('should render 5 p tags', () => {
+xit('should render 5 p tags', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
   const p = wrapper.find('p');
   expect(p.length).toEqual(5);
 });
 
-it('should render first text awards', () => {
+xit('should render first text awards', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
   const p = wrapper.find('p').at(0);
   expect(p.text()).toEqual('Awards: ');
 });
 
-it('should render second text actors', () => {
+xit('should render second text actors', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
   const p = wrapper.find('p').at(1);
   expect(p.text()).toEqual('Actors: ');
