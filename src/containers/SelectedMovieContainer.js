@@ -12,7 +12,7 @@ class SelectedMovieContainer extends React.Component {
   }
   render() {
     return(
-      <div className="search-details-container">
+      <div className="search-details-container" >
         <MovieDetailsComponent movie={ this.props.movie }/>
         <SearchContainer updateSearch={ this.props.updateSearch }/>
       </div>
