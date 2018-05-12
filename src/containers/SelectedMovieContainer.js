@@ -2,8 +2,10 @@ import React from 'react';
 import MovieDetailsComponent from '../components/MovieDetailsComponent'
 import SearchContainer from './SearchContainer.js'
 import ReactStateAnimation from 'react-state-animation'
+import TimerMixin from 'react-timer-mixin';
 
 class SelectedMovieContainer extends React.Component {
+  mixins: [TimerMixin]
   constructor(props) {
     super(props)
     this.state = {
@@ -18,6 +20,7 @@ class SelectedMovieContainer extends React.Component {
 
   collapse() {
     this._animate.cubicOut('width', 0, 500);
+    setTimeout( () => { this.props.toggleHidden(); },600);
   }
 
   start() {
