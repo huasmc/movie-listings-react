@@ -40,6 +40,13 @@ xit('should render movie-component div with onClick prop', () => {
   expect(actual.exists()).toEqual(true);
 });
 
+it('should have an onClick function', () => {
+  const wrapper = shallow(<MovieComponent />);
+  const inst = wrapper.instance();
+  const actual = inst.onClick().exists();
+  expect(actual).toEqual(true);
+})
+
 xit('should render PreviewInfoComponent with movie prop', () => {
   const wrapper = mount(<MovieComponent />);
   const component = wrapper.find('PreviewInfoComponent')
