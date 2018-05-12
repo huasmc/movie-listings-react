@@ -42,6 +42,14 @@ it('should be able to toggle the hiddenState', () => {
   inst.toggleHidden();
   const actual = wrapper.state().hiddenState;
   expect(actual).toEqual(true);
+});
+
+it('should be able to update the hiddenState', () => {
+  const wrapper = shallow(<App />);
+  const inst = wrapper.instance();
+  inst.updateHiddenState(true);
+  const actual = wrapper.state().hiddenState;
+  expect(actual).toEqual(true);
 })
 
 xit('should be able to update current movie state', () => {
