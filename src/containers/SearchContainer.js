@@ -7,7 +7,7 @@ class SearchContainer extends React.Component {
   render() {
     return(
       <div className="search-wrapper">
-        <InputContainer updateSearch={this.props.updateSearch}/>
+        <InputContainer updateSearch={this.props.updateSearch }/>
         <GenreListContainer updateSearch={ this.props.updateSearch } />
       </div>
     );

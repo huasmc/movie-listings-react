@@ -36,8 +36,8 @@ class SelectedMovieContainer extends React.Component {
 
   render() {
     return(
-      <div className="search-details-container" style={ this.getStyle() } onClick={() => this.onClick() }>
-        <MovieDetailsComponent movie={ this.props.movie }/>
+      <div className="search-details-container" style={ this.getStyle() }>
+        <MovieDetailsComponent movie={ this.props.movie } onClick={ () => this.onClick() } />
         <SearchContainer updateSearch={ this.props.updateSearch }/>
       </div>
     );
