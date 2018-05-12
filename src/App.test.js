@@ -67,7 +67,14 @@ it('shouldnt render div with SelectedMovieContainer selector when hiddenState is
   expect(actual.exists()).toEqual(false);
 });
 
-// it('should render SelectedMovieContainer with currentMovie')
+xit('should render SelectedMovieContainer with movie prop', () => {
+  const wrapper = mount(<App />);
+  const inst = wrapper.instance();
+  const container = inst.find('SelectedMovieContainer');
+  container.props()
+  const actual = container.prop('movie');
+  expect(actual.exists()).toEqual(true);
+});
 
 xit('should be able to update current movie state', () => {
   const wrapper = mount(<App />);
