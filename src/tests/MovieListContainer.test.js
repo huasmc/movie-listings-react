@@ -55,4 +55,4 @@ xit('should render 10 movie components at start', () => {
   const wrapper = shallow(<MovieListContainer />);
   const components = wrapper.find(MovieComponent)
   expect(components.length).toEqual(10);
-})
+});
