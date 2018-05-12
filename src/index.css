@@ -70,7 +70,7 @@ body {
 }
 
 .search-wrapper {
-  height: 40vh;
+  height: 100%;
   margin-top: 20%;
   display: inline-block;
   overflow: hidden;
@@ -323,7 +323,7 @@ ul {
       }
 
       .search-wrapper {
-        padding-top: 30%;
+        margin-top: 50%;
       }
 
 
