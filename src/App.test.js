@@ -14,6 +14,12 @@ it('should have a searchParams state equal to string `pirates`', () => {
   const wrapper = shallow(<App />);
   const actual = wrapper.state().searchParams;
   expect(actual).toEqual('pirates');
+});
+
+it('should have a currentMovie state of undefined', () => {
+  const wrapper = shallow(<App />);
+  const actual = wrapper.state().currentMovie;
+  expect(actual).toEqual(undefined);
 })
 
 it('should be able to update searchParams', () => {
