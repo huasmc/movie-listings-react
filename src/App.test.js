@@ -17,3 +17,11 @@ it('should be able to update searchParams', () => {
   const actual = inst.state.searchParams;
   expect(actual).toEqual('action');
 });
+
+xit('should be able to update current movie state', () => {
+  const wrapper = mount(<App />);
+  const inst = wrapper.instance();
+  inst.updateCurrentMovie('movie');
+  const actual = inst.state.currentMovie;
+  expect(actual).toEqual('movie');
+});
