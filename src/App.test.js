@@ -52,18 +52,18 @@ it('should be able to update the hiddenState', () => {
   expect(actual).toEqual(true);
 });
 
-it('should have a div with search-details-container selector when hiddenState is true', () => {
+it('should render SelectedImageContainer selector when hiddenState is true', () => {
   const wrapper = shallow(<App />);
   const inst = wrapper.instance();
   inst.toggleHidden()
   wrapper.update();
-  const actual = wrapper.find('.search-details-container');
+  const actual = wrapper.find('SelectedImageContainer');
   expect(actual.exists()).toEqual(true);
 });
 
-it('shouldnt render div with search-details-container selector when hiddenState is false', () => {
+it('shouldnt render div with SelectedImageContainer selector when hiddenState is false', () => {
   const wrapper = shallow(<App />);
-  const actual = wrapper.find('.search-details-container');
+  const actual = wrapper.find('SelectedImageContainer');
   expect(actual.exists()).toEqual(false);
 });
 

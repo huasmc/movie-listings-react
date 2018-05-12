@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import MovieListContainer from './containers/MovieListContainer.js'
-import SearchContainer from './containers/SearchContainer.js'
-import MovieDetailsComponent from './components/MovieDetailsComponent'
+import SelectedImageContainer from './containers/SelectedImageContainer'
 import axios from 'axios'
 
 class App extends Component {
@@ -51,11 +50,7 @@ class App extends Component {
     return (
       <div className="App">
         <MovieListContainer searchParams={ this.state.searchParams } updateCurrentMovie={ this.updateCurrentMovie.bind(this) } toggleHidden={ this.toggleHidden.bind(this) }/>
-        { this.state.hiddenState && <div className="search-details-container">
-          <MovieDetailsComponent movie={ this.state.currentMovie } />
-          <SearchContainer updateSearch={ this.updateSearch.bind(this) } />
-        </div>
-        }
+        { this.state.hiddenState && <SelectedImageContainer />}
       </div>
     );
   }
