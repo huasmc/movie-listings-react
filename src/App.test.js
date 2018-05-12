@@ -10,6 +10,12 @@ it('should render MovieListContainer', () => {
   expect(container.length).toEqual(1);
 });
 
+it('should have a searchParams state equal to string `pirates`', () => {
+  const wrapper = shallow(<App />);
+  const actual = wrapper.state().searchParams;
+  expect(actual).toEqual('pirates');
+})
+
 it('should be able to update searchParams', () => {
   const wrapper = mount(<App />);
   const inst = wrapper.instance();

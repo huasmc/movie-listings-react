@@ -3,7 +3,6 @@ import React from 'react';
 class PreviewInfoComponent extends React.Component {
 
   render() {
-    console.log(this.props.movie);
     let type;
     let title;
     let year;
