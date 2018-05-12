@@ -18,7 +18,7 @@ class MovieDetailsComponent extends React.Component {
       rating = this.props.movie.imdbRating;
     }
     return(
-      <div className="movie-details-container">
+      <div className="movie-details-container" onClick={() => this.props.collapse()}>
           <div className="selected-image-container" style={{backgroundImage: `url(${poster})`}}></div>
             <div className="movie-data-container">
               <p>Awards: { awards }</p>

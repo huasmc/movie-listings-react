@@ -16,7 +16,7 @@ class SelectedMovieContainer extends React.Component {
     this.start();
   }
 
-  onClick() {
+  collapse() {
     this._animate.cubicOut('width', 0, 500);
   }
 
@@ -37,8 +37,8 @@ class SelectedMovieContainer extends React.Component {
   render() {
     return(
       <div className="search-details-container" style={ this.getStyle() }>
-        <MovieDetailsComponent movie={ this.props.movie } onClick={ () => this.onClick() } />
-        <SearchContainer updateSearch={ this.props.updateSearch }/>
+        <MovieDetailsComponent movie={ this.props.movie } collapse={ () => this.collapse() } />
+        <SearchContainer updateSearch={ this.props.updateSearch } collapse={ () => this.collapse()} />
       </div>
     );
   }

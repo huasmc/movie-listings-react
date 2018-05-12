@@ -3,8 +3,8 @@ class InputContainer extends React.Component {
 
   onSubmit(e) {
     if(e.key === 'Enter') {
-      console.log('hi');
       this.props.updateSearch(e.target.value);
+      this.props.collapse();
       e.preventDefault();
     }
   }
