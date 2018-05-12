@@ -40,7 +40,7 @@ class MovieListContainer extends React.Component {
   render() {
     let movieComponents;
     const { movies } = this.state;
-    if(movies.length !== 0 || movies !== undefined) {
+    if(movies !== undefined) {
       movieComponents = this.state.movies.map((movie, i) => (<MovieComponent movie={movie} key={i} updateCurrentMovie={this.props.updateCurrentMovie}/>))
     }
     return(

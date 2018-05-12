@@ -13,7 +13,7 @@ class InputContainer extends React.Component {
   return(
    <div>
      <form onSubmit={e => { e.preventDefault(); }}>
-       <input className="input-box" onKeyPress={this.onSubmit.bind(this)} placeholder="Search"/>
+       <input className="input-box" onKeyPress={this.onSubmit.bind(this)} placeholder="SEARCH"/>
      </form>
   </div>
    );
