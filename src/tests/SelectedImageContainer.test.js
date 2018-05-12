@@ -14,7 +14,7 @@ it('should render div with search-details-container class', () => {
 });
 
 it('should render MovieDetailsComponent', () => {
-  const wrapper = shallow(<SearchContainer />);
+  const wrapper = shallow(<SelectedImageContainer />);
   const container = wrapper.find('MovieDetailsComponent')
   expect(container.length).toEqual(1);
 });
