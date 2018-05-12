@@ -15,10 +15,15 @@ it('should render div with search-details-container class', () => {
 
 it('should render MovieDetailsComponent', () => {
   const wrapper = shallow(<SelectedImageContainer />);
-  const container = wrapper.find('MovieDetailsComponent')
+  const container = wrapper.find('MovieDetailsComponent');
   expect(container.length).toEqual(1);
 });
 
+it('should render SearchContaienr', () => {
+  conts wrapper = shallow(<SearchContainer />);
+  const container = wrapper.find('SearchContainer');
+  expect(container.length).toEqual(1);
+})
 xit('should match the snapshot', () => {
   const component = renderer.create(<SelectedImageContaine />);
   let tree = component.toJSON();
