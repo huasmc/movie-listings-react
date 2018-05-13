@@ -37,10 +37,10 @@ it('should render GenreComponent with genre prop thriller', () => {
   expect(component.prop('genre')).toEqual('thriller');
 });
 
-xit('should render comedy GenreComponent with updateSearch prop', () => {
-  const wrapper = mount(<GenreListContainer />);
+it('should render comedy GenreComponent with updateSearch prop', () => {
+  const wrapper = mount(<GenreListContainer updateSearch=""/>);
   const component = wrapper.find('GenreComponent').at(0)
-  expect(component.prop('updateSearch').length).toEqual(1);
+  expect(component.prop('updateSearch')).toBe("");
 });
 
 xit('should render action GenreComponent with updateSearch prop', () => {
