@@ -34,7 +34,7 @@ it('should render SearchContainer', () => {
 it('should have width state of 0', () => {
   const wrapper = mount(<SelectedMovieContainer />);
   const width = wrapper.state().width;
-  expect(width).toEqual(0);
+  expect(width.toFixed(0)).toEqual("0");
 });
 
 it('should getStyle()', () => {
