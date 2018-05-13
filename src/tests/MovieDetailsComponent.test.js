@@ -31,10 +31,11 @@ it('should have a div with selected-image-container selector', () => {
   expect(div.length).toEqual(1);
 });
 
-xit('should render 5 p tags', () => {
+it('should render p tags', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
   const p = wrapper.find('p');
-  expect(p.length).toEqual(5);
+  const actual = p.length > 0
+  expect(actual).toEqual(true);
 });
 
 xit('should render text awards', () => {
