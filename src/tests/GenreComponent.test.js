@@ -23,4 +23,10 @@ xit('should have p tag with onClick prop', () => {
   const wrapper = shallow(<GenreComponent />);
   const p = wrapper.find('p');
   expect(p.prop('onClick')).exists().toEqual(true);
-})
+});
+
+it('should render genre passed by props', () => {
+  const wrapper = shallow(<GenreComponent genre={ "comedy" }/>);
+  const p = wrapper.find('p');
+  expect(p.text()).toEqual('comedy');
+});
