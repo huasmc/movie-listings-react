@@ -25,9 +25,9 @@ it('should have a div with movie-data-container selector', () => {
   expect(div.length).toEqual(1);
 });
 
-it('should render div tag with specified css selector', () => {
+it('should have a div with selected-image-container selector', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
-  const div = wrapper.find('.selected-image-container');
+  const div = wrapper.find('.selected-image-container')
   expect(div.length).toEqual(1);
 });
 
@@ -37,33 +37,33 @@ xit('should render 5 p tags', () => {
   expect(p.length).toEqual(5);
 });
 
-xit('should render first text awards', () => {
+xit('should render text awards', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
   const p = wrapper.find('p').at(0);
   expect(p.text()).toEqual('Awards: ');
 });
 
-xit('should render second text actors', () => {
+xit('should render text actors', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
   const p = wrapper.find('p').at(1);
   expect(p.text()).toEqual('Actors: ');
 });
 
-it('should render third text year', () => {
+it('should render text year', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
   const p = wrapper.find('p').at(0);
   expect(p.text()).toEqual('Year: ');
 });
 
-it('should render fourth text runtime', () => {
+it('should render text runtime', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
   const p = wrapper.find('p').at(1);
   expect(p.text()).toEqual('Runtime: ');
 });
 
-xit('should render fifth text rating', () => {
+it('should render text rating', () => {
   const wrapper = shallow(<MovieDetailsComponent />);
-  const p = wrapper.find('p').at();
+  const p = wrapper.find('p').at(2);
   expect(p.text()).toEqual('Rating: ');
 });
 
