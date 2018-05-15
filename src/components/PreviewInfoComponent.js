@@ -10,7 +10,7 @@ class PreviewInfoComponent extends React.Component {
       type = this.props.movie["Type"]
       title = this.props.movie["Title"]
       year = this.props.movie["Year"]
-    } 
+    }
     return(
       <div className="preview-info-container">
         <div className="preview-info">

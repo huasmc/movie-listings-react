@@ -3,6 +3,9 @@ import PreviewInfoComponent from '../components/PreviewInfoComponent'
 import { shallow, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 
+var movie = '{"Title":"movie"}'
+var parsedMovie = JSON.parse(movie);
+
 it('should render without crashing', () => {
   shallow(<PreviewInfoComponent />);
 });
@@ -43,10 +46,10 @@ it('should render a li tag with class movie-title', () => {
   expect(li.length).toEqual(1);
 });
 
-xit('should render li tag TITLE with passed props', () =>{
-  const wrapper = shallow(<PreviewInfoComponent/>);
-  const li = wrapper.find('.movie-type')
-  expect(li.length).toEqual(1);
+it('should render li tag TITLE with passed props', () => {
+  const wrapper = shallow(<PreviewInfoComponent movie={parsedMovie}/>);
+  const li = wrapper.find('.movie-title');
+  expect(li.text()).toEqual("movie");
 });
 
 xit('should render li tag TYPE with passed props', () =>{
