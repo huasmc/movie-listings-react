@@ -58,10 +58,10 @@ it('should render li tag TYPE with passed props', () => {
   expect(li.text()).toEqual("comedy");
 });
 
-xit('should render li tag TYPE with passed props', () =>{
-  const wrapper = shallow(<PreviewInfoComponent/>);
-  const li = wrapper.find('.movie-type')
-  expect(li.length).toEqual(1);
+it('should render li tag TYPE with passed props', () =>{
+  const wrapper = shallow(<PreviewInfoComponent movie={parsedMovie}/>);
+  const li = wrapper.find('li');
+  expect(li.at(2).text()).toEqual("1994");
 });
 
 it('should match the snapshot', () => {
