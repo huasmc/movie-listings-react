@@ -53,12 +53,12 @@ it('should render MovieDetailsComponent wiht movie prop', () => {
   expect(prop).toEqual("")
 });
 
-xit('should pass updateSearch to SearchContainer as prop', () => {
-  const wrapper = shallow(<SelectedMovieContainer />);
-  const container = wrapper.find('MovieDetailsComponent');
-  const prop = container.props();
+it('should pass updateSearch to SearchContainer as prop', () => {
+  const wrapper = shallow(<SelectedMovieContainer updateSearch=""/>);
+  const container = wrapper.find('SearchContainer');
+  const prop = container.props().updateSearch;
   // console.log(JSON.stringify(prop));
-  expect(prop.exists()).toEqual('true')
+  expect(prop).toEqual("")
 });
 
 xit('should match the snapshot', () => {
