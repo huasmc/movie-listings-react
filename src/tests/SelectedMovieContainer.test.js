@@ -46,11 +46,19 @@ it('should getStyle()', () => {
   expect(JSON.stringify(actual)).toEqual(JSON.stringify(expected));
 })
 
-it('should render MovieDetailsComponent wiht movie prop', () => {
+it('should render MovieDetailsComponent with movie prop', () => {
   const wrapper = shallow(<SelectedMovieContainer movie=""/>);
   const container = wrapper.find('MovieDetailsComponent');
   const prop = container.props().movie;
   expect(prop).toEqual("")
+});
+
+it('should pass collapse function as prop to MovieDetailsComponent', () => {
+  const wrapper = shallow(<SelectedMovieContainer />);
+  const container = wrapper.find('MovieDetailsComponent');
+  const inst = wrapper.instance();
+  const prop = container.props().collapse;
+  expect(JSON.stringify(prop)).toEqual(JSON.stringify(inst.collapse));
 });
 
 it('should pass updateSearch to SearchContainer as prop', () => {
