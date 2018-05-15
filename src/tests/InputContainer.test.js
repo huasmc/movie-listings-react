@@ -31,16 +31,16 @@ it('should have input with placeholder prop search', () => {
   expect(input.prop('placeholder')).toEqual('SEARCH');
 });
 
-xit('should render form with onSubmit prop', () => {
+it('should render form with onSubmit prop', () => {
  const wrapper = shallow(<InputContainer />);
  const form = wrapper.find('form');
- expect(JSON.stringify(form.prop('onSubmit'))).toEqual("");
+ expect(form.prop('onSubmit').length).toEqual(1);
 });
 
-xit('should render input box with onKeyPress prop', () => {
+it('should render input box with onKeyPress prop', () => {
  const wrapper = shallow(<InputContainer />);
  const input = wrapper.find('.input-box');
- expect(JSON.stringify(input.prop('onKeyPress'))).toEqual("");
+ expect(input.prop('onKeyPress').length).toEqual(1);
 });
 
 
