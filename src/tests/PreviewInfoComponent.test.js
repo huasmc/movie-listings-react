@@ -3,7 +3,7 @@ import PreviewInfoComponent from '../components/PreviewInfoComponent'
 import { shallow, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-var movie = '{"Title":"movie"}'
+var movie = '{"Title":"movie", "Type":"comedy", "Year":"1994"}'
 var parsedMovie = JSON.parse(movie);
 
 it('should render without crashing', () => {
@@ -50,6 +50,12 @@ it('should render li tag TITLE with passed props', () => {
   const wrapper = shallow(<PreviewInfoComponent movie={parsedMovie}/>);
   const li = wrapper.find('.movie-title');
   expect(li.text()).toEqual("movie");
+});
+
+it('should render li tag TYPE with passed props', () => {
+  const wrapper = shallow(<PreviewInfoComponent movie={parsedMovie}/>);
+  const li = wrapper.find('.movie-type');
+  expect(li.text()).toEqual("comedy");
 });
 
 xit('should render li tag TYPE with passed props', () =>{
