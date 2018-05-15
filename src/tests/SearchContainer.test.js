@@ -19,6 +19,12 @@ it('should render InputContainer with collapse prop', () => {
   expect(container.prop("collapse")).toEqual("");
 });
 
+it('should render InputContainer with updateSearch prop', () => {
+  const wrapper = mount(<SearchContainer updateSearch=""/>);
+  const container = wrapper.find('InputContainer');
+  expect(container.prop("updateSearch")).toEqual("");
+});
+
 xit('should render GenreListContainer', () => {
   const wrapper = mount(<SearchContainer />);
   const container = wrapper.find('GenreListContainer');
