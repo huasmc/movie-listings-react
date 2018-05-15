@@ -13,6 +13,12 @@ it('should render InputContainer', () => {
   expect(container.length).toEqual(1);
 });
 
+it('should render InputContainer with collapse prop', () => {
+  const wrapper = mount(<SearchContainer collapse=""/>);
+  const container = wrapper.find('InputContainer');
+  expect(container.prop("collapse")).toEqual("");
+});
+
 xit('should render GenreListContainer', () => {
   const wrapper = mount(<SearchContainer />);
   const container = wrapper.find('GenreListContainer');
