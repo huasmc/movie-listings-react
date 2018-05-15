@@ -62,6 +62,14 @@ it('should pass collapse function as prop to MovieDetailsComponent', () => {
 });
 
 it('should pass updateSearch to SearchContainer as prop', () => {
+  const wrapper = shallow(<SelectedMovieContainer />);
+  const container = wrapper.find('SearchContainer');
+  const inst = wrapper.instance();
+  const prop = container.props();
+  expect(JSON.stringify(prop)).toEqual(JSON.stringify(inst.collapse));
+});
+
+it('should pass updateSearch to SearchContainer as prop', () => {
   const wrapper = shallow(<SelectedMovieContainer updateSearch=""/>);
   const container = wrapper.find('SearchContainer');
   const prop = container.props().updateSearch;
@@ -69,8 +77,8 @@ it('should pass updateSearch to SearchContainer as prop', () => {
   expect(prop).toEqual("")
 });
 
-xit('should match the snapshot', () => {
-  const component = renderer.create(<SelectedImageContaine />);
+it('should match the snapshot', () => {
+  const component = renderer.create(<SelectedMovieContainer />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
