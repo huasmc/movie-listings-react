@@ -7,14 +7,20 @@ it('should render without crashing', () => {
   shallow(<SearchContainer />);
 });
 
-it('should match the snapshot', () => {
-  const component = renderer.create(<SearchContainer />);
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+it('should render InputContainer', () => {
+  const wrapper = mount(<SearchContainer />);
+  const container = wrapper.find('InputContainer');
+  expect(container.length).toEqual(1);
 });
 
 xit('should render GenreListContainer', () => {
   const wrapper = mount(<SearchContainer />);
-  const container = wrapper.find('GenreListContainer')
+  const container = wrapper.find('GenreListContainer');
   expect(container.length).toEqual(1);
+});
+
+it('should match the snapshot', () => {
+  const component = renderer.create(<SearchContainer />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
 });
