@@ -37,19 +37,19 @@ it('should render GenreComponent with genre prop thriller', () => {
   expect(component.prop('genre')).toEqual('thriller');
 });
 
-it('should render GenreComponent with updateSearch prop', () => {
+it('should render first GenreComponent with updateSearch prop', () => {
   const wrapper = mount(<GenreListContainer updateSearch=""/>);
   const component = wrapper.find('GenreComponent').at(0)
   expect(component.prop('updateSearch')).toBe("");
 });
 
-it('should render first GenreComponent with updateSearch prop', () => {
+it('should render second GenreComponent with updateSearch prop', () => {
   const wrapper = mount(<GenreListContainer updateSearch=""/>);
   const component = wrapper.find('GenreComponent').at(1)
   expect(component.prop('updateSearch')).toEqual("");
 });
 
-it('should render second GenreComponent with updateSearch prop', () => {
+it('should render third GenreComponent with updateSearch prop', () => {
   const wrapper = mount(<GenreListContainer updateSearch=""/>);
   const component = wrapper.find('GenreComponent').at(2)
   expect(component.prop('updateSearch')).toEqual("");
